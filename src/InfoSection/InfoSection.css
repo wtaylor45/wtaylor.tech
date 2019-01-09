@@ -1,0 +1,12 @@
+.InfoSection {
+    text-align: center;
+    margin: 0 auto;
+    min-height: 75vh; 
+    font-size: calc(10px + 2vmin);
+    background-color: #3f4552;
+    padding-top: 2vh;
+}
+
+.InfoSection-header {
+    color: rgb(209, 209, 209);
+}
