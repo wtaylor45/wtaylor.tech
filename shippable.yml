@@ -17,6 +17,8 @@ env:
 
 build:
   ci:
+    - npm install
+    - yarn install
     - npm test
     - npm run build
   on_success:
