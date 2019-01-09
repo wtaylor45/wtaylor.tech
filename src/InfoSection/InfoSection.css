@@ -2,9 +2,17 @@
     text-align: center;
     margin: 0 auto;
     min-height: 75vh; 
-    font-size: calc(10px + 2vmin);
-    background-color: #3f4552;
     padding-top: 2vh;
+    font-size: 0;
+    font-size: calc(10px + 2vmin);
+}
+
+.InfoSection.primary {
+    background-color: #282c34;
+}
+
+.InfoSection.secondary {
+    background-color: #3f4552;
 }
 
 .InfoSection-header {

@@ -5,10 +5,12 @@ import './InfoSection.css';
 class InfoSection extends React.Component {
     render(){
         return (
-            <div class="InfoSection" id={"#"+this.props.id}>
+            <div className={"InfoSection"+" "+(this.props.type || "")} id={this.props.id}>
                 <ScrollAnimation duration={.5} animateIn="fadeIn">
-                    <h1 class="InfoSection-header">{this.props.title}</h1>
-                    {this.props.children}
+                    <div className="InfoSection-body">
+                        <h1 className="InfoSection-header">{this.props.title}</h1>
+                        {this.props.children}
+                    </div>
                 </ScrollAnimation>
             </div>
         )

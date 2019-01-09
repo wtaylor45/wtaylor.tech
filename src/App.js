@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import './animate.css';
+import './lib/animate.css';
 import './App.css';
 import Arrow from './down-arrow.svg';
 import InfoSection from './InfoSection/InfoSection';
+import Rating from './Rating/Rating';
+import Languages from './topLanguages.json';
 
 
 class App extends Component {
@@ -10,21 +12,41 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 class="main-header">Hi, I'm <p class="accent">Will</p>.</h1>
-          <h2 class="secondary-header">Let me tell you about myself.</h2>
+          <h1 className="main-header">Hi, I'm <span className="accent">Will</span>.</h1>
+          <h2 className="secondary-header">Let me tell you about myself.</h2>
           <a href="#summary">
             <img src={Arrow} className="indicator"></img>
           </a>
         </header>
-        <InfoSection title="First and Foremost" id="summary">
-          <p>I am a <p class="accent">Software Engineer</p>.</p>
-          I have a passion for all things in the <p class="accent-secondary">web development</p> world. 
-          I've built frontends from the ground up for a seed stage start up, and worked down in the weeds in <p class="accent-secondary">AWS</p>.
+        <InfoSection title="First and Foremost" id="summary" type="secondary">
+          <p>I am a <span className="accent">Software Engineer</span>.</p>
+          <br/>
+          <p>I have a passion for all things in the <span className="accent-secondary">web development</span> world. 
+          I've built frontends from the ground up for a seed stage start up, and worked down in the weeds in <span className="accent-secondary">AWS</span>.</p>
+          <br/>
           <p>Let's dive into specifics.</p>
+
+        </InfoSection>
+        <InfoSection title="Languages" id="languages">
+          {createRatings(Languages, true, "#languages", "slide-right")}
         </InfoSection>
       </div>
     );
   }
+}
+
+const createRatings = (ratings, animate, parent, animation) => {
+  let result = [];
+
+  for(let i in ratings){
+    result.push((
+      <Rating subject={ratings[i].language} rating={ratings[i].rating}
+        animate={animate} parentElement={parent} animation={animation} ordinal={parseInt(i)}></Rating>
+    ));
+  }
+
+
+  return result;
 }
 
 export default App;
