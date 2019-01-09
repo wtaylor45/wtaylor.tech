@@ -1,0 +1,19 @@
+# Language setting http://docs.shippable.com/ci/languages/node/
+language: node_js
+
+# use this to control what branches get built.
+# http://docs.shippable.com/ci/advancedOptions/branches/
+branches:
+  only:
+    - master
+
+env:
+  global:
+    #secure variable contains values for AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
+    - secure: TZIV7XsPn7up2bXdUdZi0qqfQUCctuHk0tOSQjjKlrWkj5GSHxCjgkiE1wzAVW7tMpxnopEpXA8TTo+kN2oybvuYuLoQHAxUMqVtt+42ywLx04+NMJFzZahybi5Ch8N+YzbwDVM7xhJzs2GJC70NpIxd427QhtD3dIT+yy+rE5+xb7J5oxRACjdJKh6ynIEKQIa3f6lWvnwmvSMlqJcwPHLjByOlv9M/WGB8EKQdb9bDY4trC4TUU0+VfqQlz1unnAQmOwQSnd5AsKbSxWJ0oz96cKy7KZio8Y75KMFuZZzBly20ZqPepLKVcA4zN7qYNK8JNyrH0sD+vi9lDS2Mkw==
+
+build:
+
+  on_success:
+    - aws s3 sync $SHIPPABLE_BUILD_DIR "s3://www.wtaylor.tech" --region "us-east-1"
+
