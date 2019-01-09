@@ -15,7 +15,7 @@ class App extends Component {
           <h1 className="main-header">Hi, I'm <span className="accent">Will</span>.</h1>
           <h2 className="secondary-header">Let me tell you about myself.</h2>
           <a href="#summary">
-            <img src={Arrow} className="indicator"></img>
+            <img src={Arrow} alt="arrow-down" className="indicator"></img>
           </a>
         </header>
         <InfoSection title="First and Foremost" id="summary" type="secondary">
@@ -41,7 +41,7 @@ const createRatings = (ratings, animate, parent, animation) => {
   for(let i in ratings){
     result.push((
       <Rating subject={ratings[i].language} rating={ratings[i].rating}
-        animate={animate} parentElement={parent} animation={animation} ordinal={parseInt(i)}></Rating>
+        animate={animate} parentElement={parent} animation={animation} ordinal={parseInt(i)} key={i}></Rating>
     ));
   }
 
