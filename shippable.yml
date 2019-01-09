@@ -13,6 +13,8 @@ env:
     - secure: Gw8oAecBAkW1jKsq7xUWmY6JTMVFOO332G29cnDm+Bg0eyo9lnuVp56uOdxcwaX/TY1M4gUaqPYQSVYFZ29dQeKORrU25lC+oJYOi8I/WT2wB7W554k37xYytGwuzYxw6T8/GgHHR1LbeAnFqLvl5hnExEl/t4LzJ0G+XvJteA8Gf5AEuANNE6a5MfR6pyD6kAORT3wc1/WBPsQO6TUkc0GY66MEmdy5aatcFPmm+/WFtjxOT4dJZOCWt6A3ZJ1afomLLfdtCa2I4dOPB1jR7p959RNajRwipyGBtqDaF/P1uB136NGdVorN1RtEO+64aH9kWODeMlARxGrVw3i7BA==
 
 build:
+  ci:
+    - npm test
   on_success:
     - aws s3 sync $SHIPPABLE_BUILD_DIR "s3://www.wtaylor.tech" --region "us-east-1"
     

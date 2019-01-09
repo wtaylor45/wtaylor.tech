@@ -15,4 +15,18 @@
 
 .Rating-label {
     margin-right: 12px;
+    min-width: 100px;
+    width: 20vw;
+}
+
+@media only screen and (max-width: 230px) {
+    .Rating {
+        flex-direction: column;
+        align-content: center;
+        justify-items: center;
+    }
+
+    .Rating-label {
+        margin-right: 0;
+    }
 }
