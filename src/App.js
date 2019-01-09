@@ -25,10 +25,12 @@ class App extends Component {
           I've built frontends from the ground up for a seed stage start up, and worked down in the weeds in <span className="accent-secondary">AWS</span>.</p>
           <br/>
           <p>Let's dive into specifics.</p>
-
+          <a href="#languages">
+            <img src={Arrow} alt="arrow-down" className="indicator"></img>
+          </a>
         </InfoSection>
         <InfoSection title="Languages" id="languages">
-          {createRatings(Languages, true, "#languages", "slide-right")}
+          {createRatings(Languages, true, "#languages", "fade-right")}
         </InfoSection>
       </div>
     );

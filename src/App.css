@@ -2,15 +2,32 @@
 
 html, body {
   height: 100%;
+  width: 100%;
+  background-color: #282c34;
 }
 
 p {
   margin: 0;
 }
 
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(97, 97, 97);
+  border-radius: 3px;
+  opacity: .5;
+  outline: 1px solid slategrey;
+}
+
 .App {
   text-align: center;
-  background-color: #282c34;
   color: white;
   font-family: 'Raleway', sans-serif;  
   height: 100%;
@@ -38,7 +55,7 @@ p {
   animation: 2s fadeIn 1s forwards;
 }
 
-.App-header .indicator {
+.indicator {
   width: 5vw;
   min-width: 50px;
   opacity: 0;

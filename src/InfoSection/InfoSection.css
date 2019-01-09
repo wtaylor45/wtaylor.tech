@@ -1,7 +1,10 @@
 .InfoSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    margin: 0 auto;
-    min-height: 75vh; 
+    min-height: 100vh; 
     padding-top: 2vh;
     font-size: 0;
     font-size: calc(10px + 2vmin);

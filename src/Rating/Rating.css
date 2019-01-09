@@ -7,6 +7,8 @@
 
 .Rating-stars {
     height: calc(10px + 2vmin);
+    width: 20vw;
+    min-width: 100px;
 }
 
 .Rating-star {
@@ -14,19 +16,14 @@
 }
 
 .Rating-label {
-    margin-right: 12px;
     min-width: 100px;
     width: 20vw;
 }
 
-@media only screen and (max-width: 230px) {
+@media only screen and (max-width: 500px) {
     .Rating {
         flex-direction: column;
         align-content: center;
         justify-items: center;
-    }
-
-    .Rating-label {
-        margin-right: 0;
     }
 }
