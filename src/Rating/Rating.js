@@ -6,7 +6,6 @@ import StarEmpty from './star-empty.png';
 
 const Rating = props => {
     let delay = props.ordinal*250;
-    console.log(parseInt(delay))
     return (
             <div data-aos={props.animation} data-aos-delay={delay} data-aos-duration="500" data-aos-anchor={props.parentElement} className="Rating">
                 <span className="Rating-label">{props.subject}</span>

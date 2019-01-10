@@ -23,7 +23,6 @@ class NavBar extends React.Component {
     getCurrentSection = () => {
         let self = this;
         var scrollDistance = $(window).scrollTop();
-        console.log(scrollDistance)
         $('.InfoSection').each(function (i) {
             if ($(this).position().top - window.innerHeight / 2 <= scrollDistance) {
                 self.setState({ selected: $(this)[0].id });

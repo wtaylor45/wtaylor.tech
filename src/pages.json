@@ -1,6 +1,4 @@
 [
     {"name": "Introduction", "id":"intro"},
-    {"name": "Languages", "id":"lang"},
-    {"name": "Experience", "id":"exp"},
-    {"name": "Education", "id":"edu"}
+    {"name": "Languages", "id":"lang"}
 ]
