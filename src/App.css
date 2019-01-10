@@ -55,11 +55,23 @@ body::-webkit-scrollbar-thumb {
   animation: 2s fadeIn 1s forwards;
 }
 
+.link-button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.link-button:active {
+  background: none;
+  border: none;
+  outline: none;
+}
+
 .indicator {
   width: 5vw;
   min-width: 50px;
-  opacity: 0;
-  animation: 2s fadeIn 2s forwards, pulse 1.5s infinite;
+  animation: pulse 1.5s infinite;
 }
 
 .accent {

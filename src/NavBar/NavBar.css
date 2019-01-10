@@ -1,0 +1,32 @@
+.NavBar {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.NavBar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+}
+
+.NavBar .link-button {
+    font-family: 'Raleway', sans-serif;  
+    font-size: calc(10px + 1vmin);
+    padding: 3px;
+    text-decoration: none;
+    color: white;
+    margin: 3px;
+    outline: none;
+}
+
+.NavBar .link-button.active {
+    outline: none;
+    border-radius: 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+}
