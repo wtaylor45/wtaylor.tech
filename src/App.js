@@ -44,7 +44,7 @@ class App extends Component {
         </InfoSection>
         <InfoSection title={Pages[1].name} id={Pages[1].id}>
           <h2>Languages</h2>
-          {createRatings(Languages, true, Pages[1].id, "fade-right")}
+          {createRatings(Languages, true, '#'+Pages[1].id, "fade-right")}
         </InfoSection>
       </div>
     );
