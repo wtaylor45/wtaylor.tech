@@ -3,8 +3,8 @@ import './lib/animate.css';
 import './App.css';
 import Arrow from './down-arrow.svg';
 import InfoSection from './InfoSection/InfoSection';
-import Rating from './Rating/Rating';
-import Languages from './topLanguages.json';
+import Ratings from './Ratings/Ratings';
+import ratingData from './topLanguages.json';
 import Pages from './pages.json';
 import NavBar from './NavBar/NavBar';
 import $ from 'jquery';
@@ -43,26 +43,16 @@ class App extends Component {
           </button>
         </InfoSection>
         <InfoSection title={Pages[1].name} id={Pages[1].id}>
-          <h2>Languages</h2>
-          {createRatings(Languages, true, '#'+Pages[1].id, "fade-right")}
+          <div className="flex-row">
+            <Ratings title="Languages" data={ratingData.languages} parentElement={Pages[1].id} animation="fade-right" />
+            <Ratings title="Libraries" data={ratingData.libraries} parentElement={Pages[1].id} animation="fade-left" />
+          </div>
         </InfoSection>
       </div>
     );
   }
 }
 
-const createRatings = (ratings, animate, parent, animation) => {
-  let result = [];
 
-  for(let i in ratings){
-    result.push((
-      <Rating subject={ratings[i].language} rating={ratings[i].rating}
-        animate={animate} parentElement={parent} animation={animation} ordinal={parseInt(i)} key={i}></Rating>
-    ));
-  }
-
-
-  return result;
-}
 
 export default App;
