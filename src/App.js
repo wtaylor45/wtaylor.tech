@@ -21,13 +21,13 @@ class App extends Component {
     return (
       <div className="App">
       <NavBar></NavBar>
-        <header className="App-header">
+        <InfoSection className="App-header">
           <h1 className="main-header">Hi, I'm <span className="accent">Will</span>.</h1>
           <h2 className="secondary-header">Let me tell you about myself.</h2>
           <button onClick={this.arrowClickHandler} className="link-button">
             <img section={Pages[0].id} src={Arrow} alt="arrow-down" className="indicator"></img>
           </button>
-        </header>
+        </InfoSection>
         <InfoSection title={Pages[0].name} id={Pages[0].id} type="secondary">
           <p>I am a first and foremost a <span className="accent">Software Engineer</span>.</p>
           <br />
