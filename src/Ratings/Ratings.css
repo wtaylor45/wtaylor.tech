@@ -1,3 +1,7 @@
 .Ratings-container {
     margin: 12px;
 }
+
+.Ratings-container h2 {
+    margin-top: 0;
+}

@@ -1,23 +1,25 @@
 .InfoSection {
+    min-height: 100vh; 
+    font-size: 0;
+    font-size: calc(10px + 2vmin);
+}
+
+.InfoSection-body {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    min-height: 100vh; 
-    padding-top: 2vh;
-    font-size: 0;
-    font-size: calc(10px + 2vmin);
-}
-
-.InfoSection.primary {
-    background-color: #282c34;
-}
-
-.InfoSection.secondary {
-    background-color: #3f455244;
+    height: 80vh;
+    background-color: #3d3d3db7;
 }
 
 .InfoSection-header {
-    color: rgb(209, 209, 209);
+    font-family: "Oswald", sans-serif;
+    font-size: 5em;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }

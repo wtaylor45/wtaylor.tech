@@ -12,7 +12,7 @@
         {"subject": "jQuery", "rating": 5},
         {"subject": "React", "rating": 4},
         {"subject": "Express", "rating": 4},
-        {"subject": "D3", "rating": 3},
-        {"subject": "CreateJS", "rating": 3}
+        {"subject": "Webpack", "rating": 4},
+        {"subject": "D3", "rating": 3}
     ]
 }
