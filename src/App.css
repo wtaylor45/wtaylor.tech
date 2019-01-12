@@ -95,3 +95,10 @@ body::-webkit-scrollbar-thumb {
   flex-direction: row;
   justify-content: center;
 }
+
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+    background: #282c34 !important;
+  }
+}

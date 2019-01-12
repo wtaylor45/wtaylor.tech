@@ -11,6 +11,7 @@
         {"subject": "Node", "rating": 5},
         {"subject": "jQuery", "rating": 5},
         {"subject": "React", "rating": 4},
+        {"subject": "Express", "rating": 4},
         {"subject": "D3", "rating": 3},
         {"subject": "CreateJS", "rating": 3}
     ]
