@@ -1,7 +1,8 @@
 .InfoSection {
     min-height: 100vh; 
     font-size: 0;
-    font-size: calc(10px + 2vmin);
+    font-size: calc(10px + 1.5vmin);
+    width: 90vw;
 }
 
 .InfoSection-body {
@@ -10,8 +11,9 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 80vh;
+    height: 75vh;
     background-color: #3d3d3db7;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .InfoSection-header {
