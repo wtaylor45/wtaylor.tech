@@ -3,20 +3,13 @@
 
 html, body {
   height: 100%;
-  width: 100%;
-  /* background-color: #282c34; */
-  /* background: linear-gradient(45deg, #45484d 0%,#000000 100%);
+  /* background-color: #282c34;
+  background: linear-gradient(45deg, #46c6ca 0%,#00547a 100%);
+  background-image: url('/src/bg.png');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; */
-  background-image: url('./bg.jpg');
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 p {
@@ -40,6 +33,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .App {
+  background-image: url('bg.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
   color: white;
   font-family: 'Raleway', sans-serif;  
@@ -89,7 +87,7 @@ body::-webkit-scrollbar-thumb {
 
 .accent {
   display: inline;
-  color: #039ec9
+  color: #66deff
 }
 
 .accent-secondary {
@@ -105,8 +103,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media only screen and (max-device-width: 1366px) {
-  .parallax {
-    background-attachment: scroll;
-    background: #282c34 !important;
+  .App {
+    background: linear-gradient(45deg, #46c6ca 0%, #46c6ca 50%,#ff98fa 100%);
+    background-attachment: fixed;
   }
 }

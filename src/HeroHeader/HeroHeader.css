@@ -1,0 +1,19 @@
+.HeroHeader {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.border {
+    background-color: rgb(83, 83, 83);
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: calc(16px + 2vmin);
+    font-weight: 500;
+    letter-spacing: .5vw;
+    padding: 12px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
