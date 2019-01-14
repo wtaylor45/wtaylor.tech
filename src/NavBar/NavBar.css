@@ -10,6 +10,11 @@
 
 .HamburgerIcon {
     display: none;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9999
 }
 
 .HamburgerIcon img {
@@ -45,11 +50,6 @@
 @media screen and (max-width: 500px){
     .HamburgerIcon {
         display: block;
-        float: right;
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 9999
     }
 
     .NavBar {
