@@ -19,11 +19,12 @@
 
 .InfoSection-header {
     font-family: "Oswald", sans-serif;
-    font-size: calc(5vmin + 2em);
+    font-size: calc(32px + 5vmin);
     height: 20vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    line-height: 1;
+    line-height: 1.2;
+    word-break: break-word;
 }

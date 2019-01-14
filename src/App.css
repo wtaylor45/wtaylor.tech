@@ -111,10 +111,8 @@ hr {
   height: 1px;
 }
 
-/* .StyledList {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: space-between;
-  
-} */
+@media screen and (max-width: 200px){
+  .App {
+    background: linear-gradient(45deg, rgb(0, 247, 255) 0%,rgba(255, 67, 192, 0.692) 100%);
+  }
+}
