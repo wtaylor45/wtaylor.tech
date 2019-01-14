@@ -2,6 +2,7 @@ import React from 'react';
 import './NavBar.css';
 import $ from 'jquery';
 import pages from '../pages.json';
+import Hamburger from './menu.svg';
 
 class NavBar extends React.Component {
     constructor(props) {
@@ -18,6 +19,19 @@ class NavBar extends React.Component {
                 self.getCurrentSection();
             }).scroll();
         });
+    }
+
+    render() {
+        return (
+            <div className="NavBar">
+                <button className="HamburgerIcon link-button" onClick={this.hamburgerClickHandler}>
+                    <img  alt="menu" src={Hamburger}/>
+                </button>
+                <ul>
+                    {this.createNavLinks(pages)}
+                </ul>
+            </div>
+        )
     }
 
     getCurrentSection = () => {
@@ -39,7 +53,7 @@ class NavBar extends React.Component {
                     <button className={"link-button " + (page.id === this.state.selected ? "active" : "")}
                         onClick={this.clickHandler} section={page.id}>{page.name}</button>
                 </li>
-            ))
+            ));
         }
 
         return links;
@@ -50,16 +64,12 @@ class NavBar extends React.Component {
         $('html, body').animate({
             scrollTop: $("#" + e.target.getAttribute('section')).offset().top
         }, 500);
+        $('.NavBar').removeClass('expanded');
     }
 
-    render() {
-        return (
-            <div className="NavBar">
-                <ul>
-                    {this.createNavLinks(pages)}
-                </ul>
-            </div>
-        )
+    hamburgerClickHandler = (e) => {
+        e.preventDefault();
+        $('.NavBar').toggleClass('expanded');
     }
 
 }
