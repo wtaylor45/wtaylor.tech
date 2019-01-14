@@ -32,8 +32,8 @@ class App extends Component {
           </InfoSection>
           <InfoSection title={Pages[1].name} id={Pages[1].id} type="primary">
             <div className="flex-row">
-              <Ratings title="Languages" data={ratingData.languages} parentElement={Pages[1].id} animation="fade-right" />
-              <Ratings title="Libraries" data={ratingData.libraries} parentElement={Pages[1].id} animation="fade-left" />
+              <Ratings title="Languages" data={ratingData.languages} />
+              <Ratings title="Libraries" data={ratingData.libraries} />
             </div>
           </InfoSection>
         </div>
