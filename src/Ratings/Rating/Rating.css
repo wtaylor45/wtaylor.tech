@@ -16,6 +16,10 @@
     width: calc(10px + 2vmin);
 }
 
+.Rating-star.shine {
+    filter: brightness(1.3)
+}
+
 .Rating-label {
     min-width: 100px;
     width: 20vw;
