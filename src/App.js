@@ -8,6 +8,7 @@ import ratingData from './topLanguages.json';
 import Pages from './pages.json';
 import NavBar from './NavBar/NavBar';
 import ArrowLink from './ArrowLink/ArrowLink';
+import StyledListElement from './StyledList/StyledList';
 
 class App extends Component {
   render() {
@@ -34,6 +35,22 @@ class App extends Component {
             <div className="flex-row">
               <Ratings title="Languages" data={ratingData.languages} />
               <Ratings title="Libraries" data={ratingData.libraries} />
+            </div>
+          </InfoSection>
+          <InfoSection title={Pages[2].name} id={Pages[2].id} type="primary">
+            <div className="StyledList">
+              <StyledListElement>
+                I have <span className="accent-secondary">excellent written and verbal communication skills</span>. 
+              </StyledListElement>
+              <StyledListElement>
+                I am a <span className="accent">fluent French speaker</span>.
+              </StyledListElement>
+              <StyledListElement>
+                I have experience <span className="accent-secondary">leading small development teams</span>.
+              </StyledListElement>
+              <StyledListElement showDivider={false}>
+                I have <span className="accent">composed and presented countless technical demos</span> to both technical and non-technical audiences.
+              </StyledListElement>
             </div>
           </InfoSection>
         </div>

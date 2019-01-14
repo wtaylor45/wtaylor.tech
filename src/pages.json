@@ -1,4 +1,5 @@
 [
     {"name": "Introduction", "id":"intro"},
-    {"name": "Skills", "id":"skills"}
+    {"name": "Technical Skills", "id":"tech-skills"},
+    {"name": "Soft Skills", "id":"soft-skills"}
 ]

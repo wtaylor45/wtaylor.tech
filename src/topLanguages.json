@@ -3,9 +3,9 @@
         {"subject": "JavaScript", "rating": 5},
         {"subject": "HTML", "rating": 4.5},
         {"subject": "Java", "rating": 4.5},
+        {"subject": "Git", "rating": 4.5},
         {"subject": "CSS", "rating": 4},
-        {"subject": "Python", "rating": 3.5},
-        {"subject": "C", "rating": 3}
+        {"subject": "Python", "rating": 3.5}
     ],
     "libraries": [
         {"subject": "Node", "rating": 5},
