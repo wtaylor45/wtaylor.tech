@@ -1,7 +1,13 @@
 .InfoSection {
-    min-height: 100vh; 
+    margin-top: 5vh;
+    min-height: 80vh; 
     font-size: calc(10px + 1.5vmin);
-    width: 90vw;
+    width: 100vw;
+    transform: skewY(-2deg);
+}
+
+.InfoSection.secondary {
+    transform: skewY(2deg)
 }
 
 .InfoSection-body {
@@ -10,11 +16,25 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    min-height: 80vh;
+    min-height: 60vh;
     background-color: #3d3d3db7;
     font-family: 'Montserrat', sans-serif;
     border: 2px solid white;
+    border-left: none;
+    border-right: none;
     padding: 10px;
+}
+
+.InfoSection.secondary .InfoSection-body {
+    background-color: #193b41b7
+}
+
+.InfoSection.secondary .InfoSection-content {
+    transform: skewY(-2deg);    
+}
+
+.InfoSection-content {
+    transform: skewY(2deg);
 }
 
 .InfoSection-header {
