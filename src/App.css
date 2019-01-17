@@ -42,7 +42,6 @@ body::-webkit-scrollbar-thumb {
   font-family: 'Raleway', sans-serif;  
   height: 100%;
   width: 100%;
-  padding-bottom: 2%;
 }
 
 .App-content {
