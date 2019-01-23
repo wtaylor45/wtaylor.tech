@@ -4,11 +4,11 @@ import './App.css';
 import HeroHeader from './HeroHeader/HeroHeader';
 import InfoSection from './InfoSection/InfoSection';
 import Ratings from './Ratings/Ratings';
-import ratingData from './topLanguages.json';
-import Pages from './pages.json';
+import data from './data.json';
 import NavBar from './NavBar/NavBar';
 import ArrowLink from './ArrowLink/ArrowLink';
 import StyledListElement from './StyledList/StyledList';
+import ExperienceCardContainer from './Card/ExperienceCardContainer';
 
 class App extends Component {
   render() {
@@ -18,9 +18,9 @@ class App extends Component {
         <div className="App-content">
           <HeroHeader title="Hi, I'm Will.">
             (scroll down to learn more about me)
-            <ArrowLink section={Pages[0].id} />
+            <ArrowLink section={data.pages[0].id} />
           </HeroHeader>
-          <InfoSection title={Pages[0].name} id={Pages[0].id} nextSection={Pages[1].id}>
+          <InfoSection title={data.pages[0].name} id={data.pages[0].id} nextSection={data.pages[1].id}>
             <p>I am a first and foremost a <span className="accent">Software Engineer</span>.</p>
             <br />
             <p>I'm also a guitarist, producer, gamer, <span className="accent-tertiary">New York Jets</span> fan, and dog lover.</p>
@@ -30,13 +30,13 @@ class App extends Component {
             <br />
             <p>Let's dive into specifics.</p>
           </InfoSection>
-          <InfoSection title={Pages[1].name} id={Pages[1].id} type="secondary">
+          <InfoSection title={data.pages[1].name} id={data.pages[1].id} type="secondary">
             <div className="flex-row">
-              <Ratings title="Languages" data={ratingData.languages} />
-              <Ratings title="Libraries" data={ratingData.libraries} />
+              <Ratings title="Languages" data={data.proficiencies.languages} />
+              <Ratings title="Libraries" data={data.proficiencies.libraries} />
             </div>
           </InfoSection>
-          <InfoSection title={Pages[2].name} id={Pages[2].id}>
+          <InfoSection title={data.pages[2].name} id={data.pages[2].id}>
             <div className="StyledList">
               <StyledListElement>
                 I have <span className="accent-secondary">excellent written and verbal communication skills</span>.
@@ -52,10 +52,10 @@ class App extends Component {
               </StyledListElement>
             </div>
           </InfoSection>
-          <InfoSection title={Pages[3].name} id={Pages[3].id} type="secondary">
-            {/* {TODO} */}
+          <InfoSection title={data.pages[3].name} id={data.pages[3].id} type="secondary">
+            <ExperienceCardContainer experience={data.experience} />
           </InfoSection>
-          <InfoSection title={Pages[4].name} id={Pages[4].id}>
+          <InfoSection title={data.pages[4].name} id={data.pages[4].id}>
             <div className="Education">
               <h1 className="accent">Univeristy of Delaware <span className="accent-secondary">2017</span></h1>
               <h2> Computer Science, Bachelor of Science</h2>

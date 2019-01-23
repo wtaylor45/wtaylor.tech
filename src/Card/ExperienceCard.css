@@ -1,0 +1,15 @@
+.experience-subtitle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 768px){
+    .experience-duration {
+        margin: 0;
+    }
+
+    .experience-subtitle {
+        display: block !important;
+    }
+}

@@ -69,4 +69,8 @@
         animation: slideInDown .25s forwards;
         box-shadow: rgb(37, 37, 37) 0px 3px 5px;
     }
+
+    .NavBar.expanded + .App-content {
+        filter: blur(3px);
+    }
 }

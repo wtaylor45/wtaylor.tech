@@ -1,7 +1,7 @@
 import React from 'react';
 import './NavBar.css';
 import $ from 'jquery';
-import pages from '../pages.json';
+import {pages} from '../data.json';
 import Hamburger from './menu.svg';
 
 class NavBar extends React.Component {
