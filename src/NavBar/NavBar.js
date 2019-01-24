@@ -1,8 +1,9 @@
 import React from 'react';
 import './NavBar.css';
 import $ from 'jquery';
-import {pages} from '../data.json';
+import { pages } from '../data.json';
 import Hamburger from './menu.svg';
+import _ from 'underscore';
 
 class NavBar extends React.Component {
     constructor(props) {
@@ -14,10 +15,11 @@ class NavBar extends React.Component {
 
         let self = this;
         $(document).ready(() => {
-            $(window).scroll(function () {
-                self.setState({ selected: null });
-                self.getCurrentSection();
-            }).scroll();
+            $(window).scroll(_.throttle(
+                function () {
+                    self.setState({ selected: null });
+                    self.getCurrentSection();
+                }, 100)).scroll();
         });
     }
 
@@ -25,7 +27,7 @@ class NavBar extends React.Component {
         return (
             <div className="NavBar">
                 <button className="HamburgerIcon link-button" onClick={this.hamburgerClickHandler}>
-                    <img  alt="menu" src={Hamburger}/>
+                    <img alt="menu" src={Hamburger} />
                 </button>
                 <ul>
                     {this.createNavLinks(pages)}
@@ -39,7 +41,7 @@ class NavBar extends React.Component {
         var scrollDistance = $(window).scrollTop();
         $('.InfoSection').each(function (i) {
             if ($(this).position().top - window.innerHeight / 2 <= scrollDistance) {
-                if(self.state.selected !== $(this)[0].id) 
+                if (self.state.selected !== $(this)[0].id)
                     self.setState({ selected: $(this)[0].id });
             }
         });
