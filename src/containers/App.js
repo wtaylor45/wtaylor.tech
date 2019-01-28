@@ -3,11 +3,16 @@ import styled from 'styled-components';
 import Logo from '../components/Logo';
 import logoSrc from '../logo.png';
 import img from '../img.jpg';
+import data from '../data.json';
 import HeroHeader from '../components/HeroHeader';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import { purple, } from '@material-ui/core/colors';
-import Section from '../components/Section';
-
+import SectionContainer from './SectionContainer';
+import Table from '../components/Table';
+import web from '../web.svg';
+import book from '../book.svg';
+import IconTableColumn from '../components/IconTableColumn';
+import List from './List';
 
 const AppContainer = styled.div`
   color: white;
@@ -16,6 +21,10 @@ const AppContainer = styled.div`
   width: 100%;
   position: relative;
   font-family: 'Quicksand', sans-serif;
+`
+
+const Content = styled.div`
+  padding: 2%;
 `
 
 const theme = createMuiTheme({
@@ -50,11 +59,18 @@ class App extends Component {
             <HeroHeader imageSrc={img} introTitle="Hi, I'm Will, " 
               mainTitle="Front-End Developer." subTitle="(Also musician, traveler, and New York Jets Fan)"
               minHeight="70vh" isFixed={true} />
-            
-            <Section title="About Me">
-              Like I said up there, I'm Will. I'm a front-end developer who works mostly in React. I'm currently located in the Washington D.C. area
-              working for Macedon Technologies.
-            </Section>
+            <Content>
+              <SectionContainer sections={data.about} />
+              <Table>
+                <IconTableColumn icon={web} title="Languages I Use" border={true}>
+                  <List elements={data.languages} />
+                </IconTableColumn>
+                <IconTableColumn icon={book} title="Libraries & Tools" border={false}>
+                  <List elements={data.tools} />
+                </IconTableColumn>
+              </Table>
+              <SectionContainer sections={data.about}></SectionContainer>
+            </Content>
         </AppContainer>
       </MuiThemeProvider>
     );

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Button from '@material-ui/core/Button';
+import TwoToneText from './TwoToneText';
 
 const Cover = styled.div`
     position: absolute;
@@ -45,8 +46,6 @@ const MainTitle = styled.div`
     margin: 0 auto;
     align-self: center;
     text-align: center;
-    color: #00efff;
-    filter: drop-shadow(3px 3px 0px #e600ff55);
 `
 
 const SubTitle = styled.div`
@@ -69,7 +68,7 @@ const HeroHeader = ({ minHeight, imageSrc, introTitle, mainTitle, subTitle, isFi
         <Img imageSrc={imageSrc} isFixed={isFixed} />
         <Content>
             <IntroTitle>{introTitle}</IntroTitle>
-            <MainTitle>{mainTitle}</MainTitle>
+            <MainTitle><TwoToneText topColor="#00efff" bottomColor="purple">{mainTitle}</TwoToneText></MainTitle>
             <SubTitle>{subTitle}</SubTitle>
             <ResponsiveButton size="large" color="primary" variant="outlined">
                 Say Hi!

@@ -3,16 +3,16 @@ import styled from 'styled-components';
 import TwoToneText from './TwoToneText';
 
 const Container = styled.div`
-    position: relative;
-    height: ${props => props.height || "500px"};
+    /* min-height: ${props => props.height || "300px"}; */
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 5vh;
 `
 
 const Title = styled.div`
-    position: absolute;
-    top: 0;
+    position: relative;
+    top: calc(18px + 1vmin);
     font-size: calc(36px + 2vmin);
     line-height: 1;
     z-index: 1;
@@ -20,19 +20,20 @@ const Title = styled.div`
 `
 
 const Content = styled.div`
-    position: absolute;
-    top: calc(18px + 2vmin);
+    position: relative;
+    top: 0;
     background: #555555aa;
-    height: 90%;
-    width: 90%;
     padding: 12px;
-    font-size: calc(12px + 2vmin);
-    box-shadow: 2px 2px 2px black;
+    font-size: calc(8px + 2vmin);
+    border-radius: 10px;
+    border: 1px solid gray;
+    border-top: none;
 `
 
 const Text = styled.p`
-    text-align: left;
-    align-self: flex-start;
+    text-align: center;
+    align-self: center;
+    font-weight: 100;
 `
 
 const Section = ({title, children}) => (
