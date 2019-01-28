@@ -69,7 +69,7 @@ class App extends Component {
                   <List elements={data.tools} />
                 </IconTableColumn>
               </Table>
-              <SectionContainer sections={data.about}></SectionContainer>
+              <SectionContainer sections={data.experience}></SectionContainer>
             </Content>
         </AppContainer>
       </MuiThemeProvider>

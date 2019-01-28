@@ -8,6 +8,7 @@ const Container = styled.div`
     flex-direction: column;
     align-items: center;
     padding-bottom: 5vh;
+    width: 100%;
 `
 
 const Title = styled.div`
@@ -28,6 +29,7 @@ const Content = styled.div`
     border-radius: 10px;
     border: 1px solid gray;
     border-top: none;
+    width: 100%;
 `
 
 const Text = styled.p`
