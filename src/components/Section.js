@@ -14,21 +14,21 @@ const SectionTitle = styled.div`
     position: relative;
     top: calc(18px + 1vmin);
     font-size: calc(36px + 2vmin);
+    font-weight: 900;
     line-height: 1;
     z-index: 1;
     text-align: center;
-    color: #00efff;
+    color: white;
 `
 
 const Content = styled.div`
     position: relative;
     top: 0;
-    background: #555555aa;
+    background: ${props => props.backgroundColor || "none"};
     padding: 12px;
     font-size: calc(8px + 2vmin);
     border-radius: 10px;
-    border: 1px solid gray;
-    border-top: none;
+    border: ${props => props.borderWidth+' solid '+props.borderColor};
     width: 100%;
 `
 
@@ -38,12 +38,12 @@ const Text = styled.p`
     font-weight: 100;
 `
 
-const Section = ({title, children}) => (
+const Section = ({title, backgroundColor, borderColor, borderWidth, children}) => (
     <Container>
         <SectionTitle>
             {title.toUpperCase()}
         </SectionTitle>
-        <Content>
+        <Content borderColor={borderColor} borderWidth={borderWidth} backgroundColor={backgroundColor}>
             <Text>{children}</Text>
         </Content>
     </Container>
