@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import Logo from '../components/Logo';
 import logoSrc from '../logo.png';
-import img from '../img.jpg';
+import espana from '../espana.jpg';
+import lincoln from '../lincoln.jpg';
 import data from '../data.json';
 import HeroHeader from '../components/HeroHeader';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
@@ -13,6 +14,10 @@ import web from '../web.svg';
 import book from '../book.svg';
 import IconTableColumn from '../components/IconTableColumn';
 import List from './List';
+import Header from '../components/Header';
+import Title from '../components/Title';
+import TwoToneText from '../components/TwoToneText';
+import PhotoBoxContainer from './PhotoBoxContainer';
 
 const AppContainer = styled.div`
   color: white;
@@ -56,7 +61,7 @@ class App extends Component {
       <MuiThemeProvider theme={theme}>
         <AppContainer>
             <Logo animate={true} imgSrc={logoSrc}></Logo>
-            <HeroHeader imageSrc={img} introTitle="Hi, I'm Will, " 
+            <HeroHeader image={lincoln} introTitle="Hi, I'm Will, " 
               mainTitle="Front-End Developer." subTitle="(Also musician, traveler, and New York Jets Fan)"
               minHeight="70vh" isFixed={true} />
             <Content>
@@ -70,6 +75,13 @@ class App extends Component {
                 </IconTableColumn>
               </Table>
               <SectionContainer sections={data.experience}></SectionContainer>
+            </Content>
+            <Header image={espana}>
+              <Title><TwoToneText topColor="#00efff" bottomColor="purple">Beyond Work</TwoToneText></Title>
+            </Header>
+            <Content>
+              <SectionContainer sections={data.experience} />
+              <PhotoBoxContainer photos={[espana, lincoln]} />
             </Content>
         </AppContainer>
       </MuiThemeProvider>

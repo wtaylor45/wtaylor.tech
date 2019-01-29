@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Img = styled.img`
-    position: fixed;
+    position: absolute;
     width: 15vmin;
     height: 15vmin;
     z-index: 9999;

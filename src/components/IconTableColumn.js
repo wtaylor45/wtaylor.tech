@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import TableColumn from './TableColumn';
-import TwoToneText from './TwoToneText';
 
 const Icon = styled.img`
     width: 20%;

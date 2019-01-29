@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import TwoToneText from './TwoToneText';
 
 const Container = styled.div`
     /* min-height: ${props => props.height || "300px"}; */
@@ -11,13 +10,14 @@ const Container = styled.div`
     width: 100%;
 `
 
-const Title = styled.div`
+const SectionTitle = styled.div`
     position: relative;
     top: calc(18px + 1vmin);
     font-size: calc(36px + 2vmin);
     line-height: 1;
     z-index: 1;
     text-align: center;
+    color: #00efff;
 `
 
 const Content = styled.div`
@@ -40,9 +40,9 @@ const Text = styled.p`
 
 const Section = ({title, children}) => (
     <Container>
-        <Title>
-            <TwoToneText topColor="#00efff" bottomColor="purple">{title.toUpperCase()}</TwoToneText>
-        </Title>
+        <SectionTitle>
+            {title.toUpperCase()}
+        </SectionTitle>
         <Content>
             <Text>{children}</Text>
         </Content>

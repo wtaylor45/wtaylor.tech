@@ -24,5 +24,11 @@
         "GitHub",
         "VS Code",
         "Shippable"
+    ],
+    "beyondWork": [
+        {
+            "title": "Beyond Work",
+            "contents": "Placeholder"
+        }
     ]
 }
