@@ -1,0 +1,18 @@
+{
+    "languages": [
+        "JavaScript",
+        "HTML5",
+        "CSS3",
+        "Java",
+        "Python"
+    ],
+    "tools": [
+        "Node.js",
+        "ReactJS",
+        "GitHub",
+        "Redux",
+        "Webpack",
+        "VS Code",
+        "Shippable"
+    ]
+}
