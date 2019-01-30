@@ -65,18 +65,25 @@ class App extends Component {
           <Container margin="-200px 0px 0px 0px">
             <TechTable languages={tech.languages} tools={tech.tools} />
             <Section title="Experience">
-              placeholder
+              For the past nearly 2 years, I have been working as a Senior Technical Consultant at Macedon Technologies. There, I have been designing, building,
+              and devliering software to companies and government agencies. I have had the ability to lead small teams of developers, and rack up plenty
+              of face time with the clients. It's been an incredible place to learn and grow.
+              <br />
+              <br />
+              Previously, I worked at a seed stage start up called Cyber 20/20. As one of the first employees, I was tasked with building
+              the front end from the ground up. The application integrated with a state of the art machine learning system, and was used
+              to show users what types of malware were incoming on their network. The front end was built in Angular, and run as an Electron app.
             </Section>
           </Container>
           <Container backgroundColor={theme.palette.primary.dark} padding="24px 24px 200px 24px">
             <Section title="Beyond Work">
               Having been born in France to a french monther and english father has meant that my life largely revolves around travel. I've been to countless countries on 5 continents where I've had the ability to interact with so many incredible people.
-              <br/>
-              <br/>
-              Aside from programming, my other passions in life are music, and my dog Zeus. I have been playing guitar and making music for 12 years, 
+              <br />
+              <br />
+              Aside from programming, my other passions in life are music, and my dog Zeus. I have been playing guitar and making music for 12 years,
               playing in bands on and off.
-              <br/>
-              Zeus is my mutt puppy who I rescued in July 2018. He's the best - super cuddly - 
+              <br />
+              Zeus is my mutt puppy who I rescued in July 2018. He's the best - super cuddly -
               and if you work with me you might just get to meet him.
             </Section>
           </Container>
