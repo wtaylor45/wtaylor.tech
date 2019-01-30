@@ -1,7 +1,7 @@
 import React from 'react';
 import Table from './Table';
 import IconTableColumn from './IconTableColumn';
-import List from '../containers/List';
+import List from './List';
 import web from '../web.svg';
 import tool from '../tools.svg';
 
