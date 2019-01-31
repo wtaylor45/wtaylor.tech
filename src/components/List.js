@@ -11,7 +11,7 @@ const Container = styled.ul`
 
 const List = ({ elements }) =>
     <Container>
-        {elements.map(element => <ListElement>{element}</ListElement>)}
+        {elements.map((element, i) => <ListElement key={i}>{element}</ListElement>)}
     </Container>
 
 export default List;
