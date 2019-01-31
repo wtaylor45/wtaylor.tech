@@ -32,7 +32,8 @@ const Content = styled.div`
     width: 100%;
 `
 
-const Text = styled.p`
+const Text = styled.div`
+    margin-top: 3vh;
     text-align: center;
     align-self: center;
     font-weight: 100;
