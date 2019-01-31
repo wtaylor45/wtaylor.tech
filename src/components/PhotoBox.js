@@ -25,6 +25,7 @@ const Container = styled.div`
     align-items: center;
     background: #555;
     text-align: center;
+    margin: 2vw;
 `
 
 const Text = styled.div`

@@ -94,7 +94,7 @@ class App extends Component {
             </Section>
           </Container>
           <Container margin="-200px 0px 0px 0px">
-            <Grid container direction="row" justify="center" spacing={24}>
+            <Grid container direction="row" justify="center">
               <Grid item>
                 <PhotoBox image={zeus}>Zeus looking like he's finally accepted that this is his life now</PhotoBox>
               </Grid>
