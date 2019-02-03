@@ -27,7 +27,7 @@ class ContactForm extends React.Component {
         xhr.send(JSON.stringify(this.state));
         this.setState({
             disabled: true
-        });        
+        });
         xhr.onload = () => {
             this.setState({
                 disabled: false,
@@ -46,28 +46,31 @@ class ContactForm extends React.Component {
 
     render() {
         return (
-            <form onSubmit={this.onFormSubmit.bind(this)} onChange={this.onChange.bind(this)}>
-                <Grid container direction="column" alignContent="flex-start" spacing={8}>
-                    <Grid item>
-                        <Grid container direction="row" spacing={8} >
-                            <GrowGrid item>
-                                <TextField autoComplete="name" fullWidth label="Name" name="name" variant="outlined" required /></GrowGrid>
-                            <GrowGrid item>
-                                <TextField autoComplete="email" fullWidth label="Email" name="email" variant="outlined" type="email" required />
-                            </GrowGrid>
+            <div>
+                <div hidden={!this.state.success}>Thanks for your message! I'll get back to you ASAP.</div>
+                <form onSubmit={this.onFormSubmit.bind(this)} onChange={this.onChange.bind(this)} hidden={this.state.success}>
+                    <Grid container direction="column" alignContent="flex-start" spacing={8}>
+                        <Grid item>
+                            <Grid container direction="row" spacing={8} >
+                                <GrowGrid item>
+                                    <TextField autoComplete="name" fullWidth label="Name" name="name" variant="outlined" required /></GrowGrid>
+                                <GrowGrid item>
+                                    <TextField autoComplete="email" fullWidth label="Email" name="email" variant="outlined" type="email" required />
+                                </GrowGrid>
+                            </Grid>
+                        </Grid>
+                        <Grid item>
+                            <TextField variant="outlined" name="body" fullWidth={true} multiline={true}
+                                rows={10} label="Body" placeholder="What's on your mind?" required />
+                        </Grid>
+                        <Grid item>
+                            <Button size="large" color="primary" variant="outlined" type="submit" disabled={this.state.disabled}>
+                                Send
+                        </Button>
                         </Grid>
                     </Grid>
-                    <Grid item>
-                        <TextField variant="outlined" name="body" fullWidth={true} multiline={true}
-                            rows={10} label="Body" placeholder="What's on your mind?" required />
-                    </Grid>
-                    <Grid item>
-                        <Button size="large" color="primary" variant="outlined" type="submit" disabled={this.state.disabled}>
-                            Send
-                        </Button>
-                    </Grid>
-                </Grid>
-            </form>
+                </form>
+            </div>
         )
     }
 }
