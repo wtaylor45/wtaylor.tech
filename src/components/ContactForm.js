@@ -1,0 +1,66 @@
+import React from 'react';
+import styled from 'styled-components';
+import { TextField, Grid, Button, withTheme } from '@material-ui/core';
+
+const GrowGrid = styled(Grid)`
+    flex-grow: 1 !important;
+`
+
+class ContactForm extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            name: "",
+            email: "",
+            body: "",
+            disabled: false
+        }
+    }
+
+    onFormSubmit(e) {
+        e.preventDefault();
+        let xhr = new XMLHttpRequest();
+        console.log(this.state);
+        xhr.open('POST', 'https://ks1ulmlnu0.execute-api.us-east-1.amazonaws.com/Production/sendemail');
+        xhr.send(JSON.stringify(this.state));
+
+    }
+
+    onChange(e) {
+        const name = e.target.name;
+        const value = e.target.value;
+        this.setState({
+            [name]: value
+        });
+    }
+
+    render() {
+        return (
+            <form onSubmit={this.onFormSubmit.bind(this)} onChange={this.onChange.bind(this)}>
+                <Grid container direction="column" alignContent="flex-start" spacing={8}>
+                    <Grid item>
+                        <Grid container direction="row" spacing={8} >
+                            <GrowGrid item>
+                                <TextField autoComplete="name" fullWidth label="Name" name="name" variant="outlined" required /></GrowGrid>
+                            <GrowGrid item>
+                                <TextField autoComplete="email" fullWidth label="Email" name="email" variant="outlined" type="email" required />
+                            </GrowGrid>
+                        </Grid>
+                    </Grid>
+                    <Grid item>
+                        <TextField variant="outlined" name="body" fullWidth={true} multiline={true}
+                            rows={10} label="Body" placeholder="What's on your mind?" required />
+                    </Grid>
+                    <Grid item>
+                        <Button size="large" color="primary" variant="outlined" type="submit" disabled={this.state.disabled}>
+                            Send
+                        </Button>
+                    </Grid>
+                </Grid>
+            </form>
+        )
+    }
+}
+
+export default withTheme()(ContactForm);
