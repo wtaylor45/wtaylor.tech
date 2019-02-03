@@ -14,17 +14,26 @@ class ContactForm extends React.Component {
             name: "",
             email: "",
             body: "",
-            disabled: false
+            disabled: false,
+            error: false,
+            success: false
         }
     }
 
     onFormSubmit(e) {
         e.preventDefault();
         let xhr = new XMLHttpRequest();
-        console.log(this.state);
         xhr.open('POST', 'https://ks1ulmlnu0.execute-api.us-east-1.amazonaws.com/Production/sendemail');
         xhr.send(JSON.stringify(this.state));
-
+        this.setState({
+            disabled: true
+        });        
+        xhr.onload = () => {
+            this.setState({
+                disabled: false,
+                success: true
+            })
+        }
     }
 
     onChange(e) {
