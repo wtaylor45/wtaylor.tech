@@ -14,6 +14,7 @@ import zeus from '../zeus.jpeg'
 import clog from '../clog.jpg';
 import selfie from '../selfie.jpg';
 import Grid from '@material-ui/core/Grid'
+import ContactForm from '../components/ContactForm';
 
 const AppContainer = styled.div`
   color: white;
@@ -28,6 +29,7 @@ const Container = styled.div`
   padding: ${props => props.padding || '2%'};
   margin: ${props => props.margin || '0'};
   background: ${props => props.backgroundColor};
+  text-align: center;
 `
 
 const theme = createMuiTheme({
@@ -105,6 +107,12 @@ class App extends Component {
                 <PhotoBox image={clog}>There's probably a sweet joke using 'Clog' that I could've made here</PhotoBox>
               </Grid>
             </Grid>
+          </Container>
+          <Container>
+            <Section title="Reach out to me">
+              <p>Contact me using the form below and I'll be sure to get back to you as soon as I can.</p>
+              <ContactForm />           
+            </Section>           
           </Container>
         </AppContainer>
       </MuiThemeProvider>

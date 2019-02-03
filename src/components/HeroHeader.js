@@ -41,7 +41,7 @@ const HeroHeader = ({ minHeight, image, introTitle, mainTitle, subTitle, isFixed
         <SubTitle>{subTitle}</SubTitle>
         <ResponsiveButton size="large" color="primary" variant="outlined">
             Say Hi!
-            </ResponsiveButton>
+        </ResponsiveButton>
     </Header>
 )
 
