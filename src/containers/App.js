@@ -55,6 +55,10 @@ const theme = createMuiTheme({
 });
 
 class App extends Component {
+  contactClickHandler(e){
+    document.getElementById('contact').scrollIntoView({behavior: "smooth"});
+  }
+
   render() {
     return (
       <MuiThemeProvider theme={theme}>
@@ -62,7 +66,7 @@ class App extends Component {
           <Logo animate={true} imgSrc={logoSrc}></Logo>
           <HeroHeader image={lincoln} introTitle="Hi, I'm Will, "
             mainTitle="Software Developer." subTitle="(Also musician, traveler, and New York Jets Fan)"
-            minHeight="70vh" isFixed={true} />
+            minHeight="70vh" onClick={this.contactClickHandler.bind(this)} />
           <Container backgroundColor={theme.palette.primary.dark} padding="24px 24px 200px 24px">
             <Section title="About Me">
               Like I said up there, I'm Will. I'm a software developer who works mostly in JavaScript. I'm currently located in the Washington, D.C.
@@ -111,7 +115,7 @@ class App extends Component {
           <Container>
             <Section title="Reach out to me">
               <p>Contact me using the form below and I'll be sure to get back to you as soon as I can.</p>
-              <ContactForm />           
+              <ContactForm id="contact" />           
             </Section>           
           </Container>
         </AppContainer>

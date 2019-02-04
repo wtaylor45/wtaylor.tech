@@ -32,14 +32,14 @@ const ResponsiveButton = styled(Button)`
     align-self: center;
 `
 
-const HeroHeader = ({ minHeight, image, introTitle, mainTitle, subTitle, isFixed, theme }) => (
+const HeroHeader = ({ minHeight, image, introTitle, mainTitle, subTitle, theme, onClick }) => (
     <Header image={image} minHeight={minHeight}>
         <IntroTitle>{introTitle}</IntroTitle>
         <Title>
             <TwoToneText topColor={theme.palette.primary.light} bottomColor={theme.palette.secondary.dark}>{mainTitle}</TwoToneText>
         </Title>
         <SubTitle>{subTitle}</SubTitle>
-        <ResponsiveButton size="large" color="primary" variant="outlined">
+        <ResponsiveButton onClick={onClick} size="large" color="primary" variant="outlined">
             Say Hi!
         </ResponsiveButton>
     </Header>

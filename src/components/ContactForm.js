@@ -46,7 +46,7 @@ class ContactForm extends React.Component {
 
     render() {
         return (
-            <div>
+            <div id={this.props.id} >
                 <div hidden={!this.state.success}>Thanks for your message! I'll get back to you ASAP.</div>
                 <form onSubmit={this.onFormSubmit.bind(this)} onChange={this.onChange.bind(this)} hidden={this.state.success}>
                     <Grid container direction="column" alignContent="flex-start" spacing={8}>
