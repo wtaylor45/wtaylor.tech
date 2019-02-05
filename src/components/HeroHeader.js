@@ -28,7 +28,7 @@ const ResponsiveButton = styled(Button)`
     margin: 16px !important;
     width: 30%;
     max-width: 250px !important;
-    min-width: 100px !important;
+    min-width: 120px !important;
     align-self: center;
 `
 
