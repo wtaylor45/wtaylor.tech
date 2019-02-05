@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Error from '../components/Error';
 import { TextField, Grid, Button, withTheme } from '@material-ui/core';
 
 const GrowGrid = styled(Grid)`
@@ -15,25 +16,19 @@ class ContactForm extends React.Component {
             email: "",
             body: "",
             disabled: false,
-            error: false,
+            error: "",
             success: false
         }
     }
 
     onFormSubmit(e) {
         e.preventDefault();
-        let xhr = new XMLHttpRequest();
-        xhr.open('POST', 'https://ks1ulmlnu0.execute-api.us-east-1.amazonaws.com/Production/sendemail');
-        xhr.send(JSON.stringify(this.state));
-        this.setState({
-            disabled: true
-        });
-        xhr.onload = () => {
-            this.setState({
-                disabled: false,
-                success: true
-            })
-        }
+        fetch('https://ks1ulmlnu0.execute-api.us-east-1.amazonaws.com/Production/sendemail', {
+            method: 'POST',
+            body: JSON.stringify(this.state)
+        })
+            .then(() => this.setState({success: true, disabled: false}))
+            .catch(() => this.setState({error: "There was an issue sending your message. Try again in a bit.", disabled: false}));
     }
 
     onChange(e) {
@@ -47,10 +42,11 @@ class ContactForm extends React.Component {
     render() {
         return (
             <div id={this.props.id} >
-                {this.success ?
+                {this.state.success ?
                     (<div>Thanks for your message! I'll get back to you ASAP.</div>)
                     :
                     (<form onSubmit={this.onFormSubmit.bind(this)} onChange={this.onChange.bind(this)}>
+                        {this.state.error ? <Error>{this.state.error}</Error> : null }
                         <Grid container direction="column" alignContent="flex-start" spacing={8}>
                             <Grid item>
                                 <Grid container direction="row" spacing={8} >

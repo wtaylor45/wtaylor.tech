@@ -14,7 +14,7 @@ import zeus from '../zeus.jpeg'
 import clog from '../clog.jpg';
 import selfie from '../selfie.jpg';
 import Grid from '@material-ui/core/Grid'
-import ContactForm from '../components/ContactForm';
+import ContactForm from './ContactForm';
 
 const AppContainer = styled.div`
   color: white;
