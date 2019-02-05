@@ -23,6 +23,7 @@ class ContactForm extends React.Component {
 
     onFormSubmit(e) {
         e.preventDefault();
+        this.setState({disabled: true});
         fetch('https://ks1ulmlnu0.execute-api.us-east-1.amazonaws.com/Production/sendemail', {
             method: 'POST',
             body: JSON.stringify(this.state)
@@ -51,9 +52,9 @@ class ContactForm extends React.Component {
                             <Grid item>
                                 <Grid container direction="row" spacing={8} >
                                     <GrowGrid item>
-                                        <TextField autoComplete="name" fullWidth label="Name" name="name" variant="outlined" required /></GrowGrid>
+                                        <TextField autoComplete="name" fullWidth label="Name" name="name"  required /></GrowGrid>
                                     <GrowGrid item>
-                                        <TextField autoComplete="email" fullWidth label="Email" name="email" variant="outlined" type="email" required />
+                                        <TextField autoComplete="email" fullWidth label="Email" name="email" type="email" required />
                                     </GrowGrid>
                                 </Grid>
                             </Grid>
