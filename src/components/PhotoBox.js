@@ -18,11 +18,8 @@ const Container = styled.div`
     min-width: 200px;
     min-height: 250px;
     width: ${props => props.width || '25vw'};
-    /* height: ${props => props.height || '40vw'}; */
+    height: ${props => props.height || '40vw'};
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background: #555;
     text-align: center;
     margin: 2vw;
@@ -31,7 +28,7 @@ const Container = styled.div`
 const Text = styled.div`
     display: block;
     padding: 12px;
-    font-size: calc(6px + 2vmin);
+    font-size: calc(8px + 1vmin);
 `
 
 const PhotoBox = ({children, image, width, height}) => (
