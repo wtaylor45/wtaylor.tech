@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Error from '../components/Error';
+import Error from '../../components/Error';
 import { TextField, Grid, Button, withTheme } from '@material-ui/core';
 
 const GrowGrid = styled(Grid)`

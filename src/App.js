@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import Logo from '../components/Logo';
-import logoSrc from '../logo.png';
-import lincoln from '../lincoln.jpg';
-import HeroHeader from '../components/HeroHeader';
+import Logo from './components/Logo';
+import logoSrc from './logo.png';
+import lincoln from './lincoln.jpg';
+import HeroHeader from './components/HeroHeader';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import { purple, cyan, } from '@material-ui/core/colors';
-import Section from '../components/Section';
-import TechTable from '../components/TechTable';
-import tech from '../tech.json';
-import PhotoBox from '../components/PhotoBox';
-import zeus from '../zeus.jpeg'
-import clog from '../clog.jpg';
-import selfie from '../selfie.jpg';
+import Section from './components/Section';
+import TechTable from './components/TechTable';
+import tech from './tech.json';
+import PhotoBox from './components/PhotoBox';
+import zeus from './zeus.jpeg'
+import clog from './clog.jpg';
+import selfie from './selfie.jpg';
 import Grid from '@material-ui/core/Grid'
-import ContactForm from './ContactForm';
+import ContactForm from './containers/ContactForm/ContactForm';
 
 const AppContainer = styled.div`
   color: white;
