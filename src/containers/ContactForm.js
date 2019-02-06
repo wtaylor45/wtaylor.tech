@@ -52,9 +52,9 @@ class ContactForm extends React.Component {
                             <Grid item>
                                 <Grid container direction="row" spacing={8} >
                                     <GrowGrid item>
-                                        <TextField autoComplete="name" fullWidth label="Name" name="name"  required /></GrowGrid>
+                                        <TextField variant="outlined" autoComplete="name" fullWidth label="Name" name="name"  required /></GrowGrid>
                                     <GrowGrid item>
-                                        <TextField autoComplete="email" fullWidth label="Email" name="email" type="email" required />
+                                        <TextField variant="outlined" autoComplete="email" fullWidth label="Email" name="email" type="email" required />
                                     </GrowGrid>
                                 </Grid>
                             </Grid>
