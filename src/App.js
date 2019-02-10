@@ -114,7 +114,6 @@ class App extends Component {
           </Container>
           <Container>
             <Section title="Reach out to me">
-              <p>Contact me using the form below and I'll be sure to get back to you as soon as I can.</p>
               <ContactForm id="contact" />           
             </Section>           
           </Container>

@@ -47,6 +47,7 @@ class ContactForm extends React.Component {
                     (<div>Thanks for your message! I'll get back to you ASAP.</div>)
                     :
                     (<form onSubmit={this.onFormSubmit.bind(this)} onChange={this.onChange.bind(this)}>
+                        <p>Contact me using the form below and I'll be sure to get back to you as soon as I can.</p>
                         {this.state.error ? <Error>{this.state.error}</Error> : null }
                         <Grid container direction="column" alignContent="flex-start" spacing={8}>
                             <Grid item>
