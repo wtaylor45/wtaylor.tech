@@ -5,7 +5,7 @@ const Img = styled.img`
     border-radius: 10px;
     min-height: 200px;
     width: ${props => props.width || '100%'};
-    height: ${props => props.width || '25vw'};
+    height: ${props => props.width || '25vmin'};
     object-fit: cover;
 
     &:hover {
@@ -16,9 +16,9 @@ const Img = styled.img`
 
 const Container = styled.div`
     min-width: 200px;
-    min-height: 250px;
-    width: ${props => props.width || '25vw'};
-    height: ${props => props.height || '40vw'};
+    min-height: 275px;
+    width: ${props => props.width || '25vmin'};
+    height: ${props => props.height || '40vmin'};
     border-radius: 10px;
     background: #555;
     text-align: center;
