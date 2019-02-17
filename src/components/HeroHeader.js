@@ -38,9 +38,9 @@ const ResponsiveButton = styled(Button)`
 
 const HeroHeader = ({ minHeight, image, introTitle, mainTitle, subTitle, theme, onClick }) => {
     const icons = [
-        {img: GitHub, link: "https://github.com/wtaylor45/"},
-        {img: Twitter, link: "https://twitter.com/nothisiswill/"},
-        {img: LinkedIn, link: "https://www.linkedin.com/in/wtaylor45/"}
+        {img: GitHub, link: "https://github.com/wtaylor45/", alt: "GitHub link"},
+        {img: Twitter, link: "https://twitter.com/nothisiswill/", alt: "Twitter link"},
+        {img: LinkedIn, link: "https://www.linkedin.com/in/wtaylor45/", alt: "LinkedIn link"}
     ]
 
     return (
