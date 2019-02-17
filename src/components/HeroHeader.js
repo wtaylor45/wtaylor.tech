@@ -6,7 +6,6 @@ import Title from './Title';
 import Header from './Header';
 import { withTheme } from '@material-ui/core/styles';
 
-
 const IntroTitle = styled.div`
     text-align: left;
     align-self: center;
@@ -35,6 +34,7 @@ const ResponsiveButton = styled(Button)`
 const HeroHeader = ({ minHeight, image, introTitle, mainTitle, subTitle, theme, onClick }) => (
     <Header image={image} minHeight={minHeight}>
         <IntroTitle>{introTitle}</IntroTitle>
+        
         <Title>
             <TwoToneText topColor={theme.palette.primary.light} bottomColor={theme.palette.secondary.dark}>{mainTitle}</TwoToneText>
         </Title>
