@@ -5,6 +5,11 @@ import TwoToneText from './TwoToneText';
 import Title from './Title';
 import Header from './Header';
 import { withTheme } from '@material-ui/core/styles';
+import GitHub from '../img/github.svg';
+import Twitter from '../img/twitter.svg';
+import LinkedIn from '../img/linkedin.svg';
+import { IconList } from './IconList';
+
 
 const IntroTitle = styled.div`
     text-align: left;
@@ -31,18 +36,26 @@ const ResponsiveButton = styled(Button)`
     align-self: center;
 `
 
-const HeroHeader = ({ minHeight, image, introTitle, mainTitle, subTitle, theme, onClick }) => (
-    <Header image={image} minHeight={minHeight}>
-        <IntroTitle>{introTitle}</IntroTitle>
-        
-        <Title>
-            <TwoToneText topColor={theme.palette.primary.light} bottomColor={theme.palette.secondary.dark}>{mainTitle}</TwoToneText>
-        </Title>
-        <SubTitle>{subTitle}</SubTitle>
-        <ResponsiveButton onClick={onClick} size="large" color="primary" variant="outlined">
-            Say Hi!
-        </ResponsiveButton>
-    </Header>
-)
+const HeroHeader = ({ minHeight, image, introTitle, mainTitle, subTitle, theme, onClick }) => {
+    const icons = [
+        {img: GitHub, link: "https://github.com/wtaylor45/"},
+        {img: Twitter, link: "https://twitter.com/nothisiswill/"},
+        {img: LinkedIn, link: "https://www.linkedin.com/in/wtaylor45/"}
+    ]
+
+    return (
+        <Header image={image} minHeight={minHeight}>
+            <IntroTitle>{introTitle}</IntroTitle>
+            <Title>
+                <TwoToneText topColor={theme.palette.primary.light} bottomColor={theme.palette.secondary.dark}>{mainTitle}</TwoToneText>
+            </Title>
+            <SubTitle>{subTitle}</SubTitle>
+            <IconList icons={icons} width="30vw" height="30vw" />
+            <ResponsiveButton onClick={onClick} size="large" color="primary" variant="outlined">
+                Say Hi!
+            </ResponsiveButton>
+        </Header>
+    )
+};
 
 export default withTheme()(HeroHeader);

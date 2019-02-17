@@ -19,6 +19,7 @@ const Content = styled(Cover)`
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    align-items: center;
     font-weight: 200;
     font-size: calc(16px + 2vmin);
 `

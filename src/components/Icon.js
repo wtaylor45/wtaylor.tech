@@ -7,11 +7,11 @@ const Button = styled.a`
 `
 
 const Img = styled.img`
-    width: ${props => props.width};
-    height: ${props => props.height};
+    width: ${props => props.width || '32px'};
+    height: ${props => props.height || '32px'};
 `
 
-export const Icon = (icon, link, width, height) => 
+export const Icon = ({img, link, width, height}) => 
     <Button href={link}>
-        <Img src={icon} width={width} height={height}/>
+        <img src={img} width={width} height={height}/>
     </Button>
