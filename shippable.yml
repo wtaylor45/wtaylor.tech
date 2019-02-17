@@ -19,7 +19,6 @@ build:
   ci:
     - npm install
     - yarn install
-    - npm test
     - npm run build
   on_success:
     - if [ "$IS_PULL_REQUEST" == false ]; then aws s3 sync $SHIPPABLE_BUILD_DIR/build/ "s3://wtaylor.tech" --region "us-east-1"; fi
