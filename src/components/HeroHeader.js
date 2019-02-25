@@ -10,52 +10,56 @@ import Twitter from '../img/twitter.svg';
 import LinkedIn from '../img/linkedin.svg';
 import { IconList } from './IconList';
 
-
 const IntroTitle = styled.div`
-    text-align: left;
-    align-self: center;
-    width: 80vw;
-    max-width: 1080px;
-    color: white;
-    font-weight: 900;
-`
+  text-align: left;
+  align-self: center;
+  width: 80vw;
+  max-width: 1080px;
+  color: white;
+  font-weight: 900;
+`;
 
 const SubTitle = styled.div`
-    font-size: calc(8px + 1vmin);
-    margin: 0 auto;
-    align-self: center;
-    text-align: center;
-    font-weight: 600;
-`
+  font-size: calc(8px + 1vmin);
+  margin: 0 auto;
+  align-self: center;
+  text-align: center;
+  font-weight: 600;
+`;
 
 const ResponsiveButton = styled(Button)`
-    margin: 16px !important;
-    width: 30%;
-    max-width: 250px !important;
-    min-width: 120px !important;
-    align-self: center;
-`
+  margin: 16px !important;
+  width: 30%;
+  max-width: 250px !important;
+  min-width: 120px !important;
+  align-self: center;
+`;
 
 const HeroHeader = ({ minHeight, image, introTitle, mainTitle, subTitle, theme, onClick }) => {
-    const icons = [
-        {img: GitHub, link: "https://github.com/wtaylor45/", alt: "GitHub link"},
-        {img: Twitter, link: "https://twitter.com/nothisiswill/", alt: "Twitter link"},
-        {img: LinkedIn, link: "https://www.linkedin.com/in/wtaylor45/", alt: "LinkedIn link"}
-    ]
+  const icons = [
+    { img: GitHub, link: 'https://github.com/wtaylor45/', alt: 'GitHub link' },
+    { img: Twitter, link: 'https://twitter.com/nothisiswill/', alt: 'Twitter link' },
+    { img: LinkedIn, link: 'https://www.linkedin.com/in/wtaylor45/', alt: 'LinkedIn link' },
+  ];
 
-    return (
-        <Header image={image} minHeight={minHeight}>
-            <IntroTitle>{introTitle}</IntroTitle>
-            <Title>
-                <TwoToneText topColor={theme.palette.primary.light} bottomColor={theme.palette.secondary.dark}>{mainTitle}</TwoToneText>
-            </Title>
-            <SubTitle>{subTitle}</SubTitle>
-            <IconList icons={icons} width="30vw" height="30vw" />
-            <ResponsiveButton onClick={onClick} size="large" color="primary" variant="outlined">
-                Say Hi!
-            </ResponsiveButton>
-        </Header>
-    )
+  return (
+    <Header image={image} minHeight={minHeight}>
+      <IntroTitle>{introTitle}</IntroTitle>
+      <Title>
+        <TwoToneText
+          topColor={theme.palette.primary.light}
+          bottomColor={theme.palette.secondary.dark}
+        >
+          {mainTitle}
+        </TwoToneText>
+      </Title>
+      <SubTitle>{subTitle}</SubTitle>
+      <IconList icons={icons} width="30vw" height="30vw" />
+      <ResponsiveButton onClick={onClick} size="large" color="primary" variant="outlined">
+        Say Hi!
+      </ResponsiveButton>
+    </Header>
+  );
 };
 
 export default withTheme()(HeroHeader);
