@@ -7,6 +7,11 @@ const GrowGrid = styled(Grid)`
     flex-grow: 1 !important;
 `
 
+const FullItem = styled(Grid)`
+    width: 100%;
+    max-width: 768px;
+`
+
 class ContactForm extends React.Component {
     constructor(props) {
         super(props);
@@ -49,24 +54,25 @@ class ContactForm extends React.Component {
                     (<form onSubmit={this.onFormSubmit.bind(this)} onChange={this.onChange.bind(this)}>
                         <p>Contact me using the form below and I'll be sure to get back to you as soon as I can.</p>
                         {this.state.error ? <Error>{this.state.error}</Error> : null }
-                        <Grid container direction="column" alignContent="flex-start" spacing={8}>
-                            <Grid item>
-                                <Grid container direction="row" spacing={8} >
-                                    <GrowGrid item>
-                                        <TextField variant="outlined" autoComplete="name" fullWidth label="Name" name="name"  required /></GrowGrid>
+                        <Grid container direction="column" alignContent="center" spacing={8}>
+                            <FullItem item lg>
+                                <Grid container direction="row" spacing={8}>
+                                    <GrowGrid item fullWidth>
+                                        <TextField variant="outlined" autoComplete="name" fullWidth label="Name" name="name"  required />
+                                    </GrowGrid>
                                     <GrowGrid item>
                                         <TextField variant="outlined" autoComplete="email" fullWidth label="Email" name="email" type="email" required />
                                     </GrowGrid>
                                 </Grid>
-                            </Grid>
-                            <Grid item>
+                            </FullItem>
+                            <GrowGrid fullWidth item>
                                 <TextField variant="outlined" name="body" fullWidth={true} multiline={true}
                                     rows={10} label="Body" placeholder="What's on your mind?" required />
-                            </Grid>
+                            </GrowGrid>
                             <Grid item>
                                 <Button size="large" color="primary" variant="outlined" type="submit" disabled={this.state.disabled}>
                                     Send
-                        </Button>
+                                </Button>
                             </Grid>
                         </Grid>
                     </form>)
