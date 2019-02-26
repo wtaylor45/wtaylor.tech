@@ -57,7 +57,7 @@ class ContactForm extends React.Component {
                         <Grid container direction="column" alignContent="center" spacing={8}>
                             <FullItem item lg>
                                 <Grid container direction="row" spacing={8}>
-                                    <GrowGrid item fullWidth>
+                                    <GrowGrid item>
                                         <TextField variant="outlined" autoComplete="name" fullWidth label="Name" name="name"  required />
                                     </GrowGrid>
                                     <GrowGrid item>
@@ -65,7 +65,7 @@ class ContactForm extends React.Component {
                                     </GrowGrid>
                                 </Grid>
                             </FullItem>
-                            <GrowGrid fullWidth item>
+                            <GrowGrid item>
                                 <TextField variant="outlined" name="body" fullWidth={true} multiline={true}
                                     rows={10} label="Body" placeholder="What's on your mind?" required />
                             </GrowGrid>

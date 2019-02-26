@@ -14,8 +14,8 @@ const List = styled.div`
 
 export const IconList = ({ icons, width, height }) => (
   <List>
-    {icons.map(icon => (
-      <Icon link={icon.link} img={icon.img} alt={icon.alt} width={width} height={height} />
+    {icons.map((icon, i) => (
+      <Icon key={i} link={icon.link} img={icon.img} alt={icon.alt} width={width} height={height} />
     ))}
   </List>
 );

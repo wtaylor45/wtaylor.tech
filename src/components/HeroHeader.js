@@ -5,9 +5,9 @@ import TwoToneText from './TwoToneText';
 import Title from './Title';
 import Header from './Header';
 import { withTheme } from '@material-ui/core/styles';
-import GitHub from '../img/github.svg';
-import Twitter from '../img/twitter.svg';
-import LinkedIn from '../img/linkedin.svg';
+import GitHub from '../images/github.svg';
+import Twitter from '../images/twitter.svg';
+import LinkedIn from '../images/linkedin.svg';
 import { IconList } from './IconList';
 
 const IntroTitle = styled.div`
