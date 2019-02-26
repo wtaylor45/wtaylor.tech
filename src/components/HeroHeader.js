@@ -1,14 +1,14 @@
-import React from 'react';
-import styled from 'styled-components';
-import Button from '@material-ui/core/Button';
-import TwoToneText from './TwoToneText';
-import Title from './Title';
-import Header from './Header';
-import { withTheme } from '@material-ui/core/styles';
-import GitHub from '../images/github.svg';
-import Twitter from '../images/twitter.svg';
-import LinkedIn from '../images/linkedin.svg';
-import { IconList } from './IconList';
+import React from "react"
+import styled from "styled-components"
+import Button from "@material-ui/core/Button"
+import TwoToneText from "./TwoToneText"
+import Title from "./Title"
+import Header from "./Header"
+import { withTheme } from "@material-ui/core/styles"
+import GitHub from "../images/github.svg"
+import Twitter from "../images/twitter.svg"
+import LinkedIn from "../images/linkedin.svg"
+import { IconList } from "./IconList"
 
 const IntroTitle = styled.div`
   text-align: left;
@@ -17,7 +17,7 @@ const IntroTitle = styled.div`
   max-width: 1080px;
   color: white;
   font-weight: 900;
-`;
+`
 
 const SubTitle = styled.div`
   font-size: calc(8px + 1vmin);
@@ -25,7 +25,7 @@ const SubTitle = styled.div`
   align-self: center;
   text-align: center;
   font-weight: 600;
-`;
+`
 
 const ResponsiveButton = styled(Button)`
   margin: 16px !important;
@@ -33,14 +33,30 @@ const ResponsiveButton = styled(Button)`
   max-width: 250px !important;
   min-width: 120px !important;
   align-self: center;
-`;
+`
 
-const HeroHeader = ({ minHeight, image, introTitle, mainTitle, subTitle, theme, onClick }) => {
+const HeroHeader = ({
+  minHeight,
+  image,
+  introTitle,
+  mainTitle,
+  subTitle,
+  theme,
+  onClick,
+}) => {
   const icons = [
-    { img: GitHub, link: 'https://github.com/wtaylor45/', alt: 'GitHub link' },
-    { img: Twitter, link: 'https://twitter.com/nothisiswill/', alt: 'Twitter link' },
-    { img: LinkedIn, link: 'https://www.linkedin.com/in/wtaylor45/', alt: 'LinkedIn link' },
-  ];
+    { img: GitHub, link: "https://github.com/wtaylor45/", alt: "GitHub link" },
+    {
+      img: Twitter,
+      link: "https://twitter.com/nothisiswill/",
+      alt: "Twitter link",
+    },
+    {
+      img: LinkedIn,
+      link: "https://www.linkedin.com/in/wtaylor45/",
+      alt: "LinkedIn link",
+    },
+  ]
 
   return (
     <Header image={image} minHeight={minHeight}>
@@ -55,11 +71,16 @@ const HeroHeader = ({ minHeight, image, introTitle, mainTitle, subTitle, theme, 
       </Title>
       <SubTitle>{subTitle}</SubTitle>
       <IconList icons={icons} width="30vw" height="30vw" />
-      <ResponsiveButton onClick={onClick} size="large" color="primary" variant="outlined">
+      <ResponsiveButton
+        onClick={onClick}
+        size="large"
+        color="primary"
+        variant="outlined"
+      >
         Say Hi!
       </ResponsiveButton>
     </Header>
-  );
-};
+  )
+}
 
-export default withTheme()(HeroHeader);
+export default withTheme()(HeroHeader)

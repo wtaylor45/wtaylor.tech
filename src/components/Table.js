@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react"
+import styled from "styled-components"
 
 const Container = styled.div`
   display: flex;
@@ -12,8 +12,8 @@ const Container = styled.div`
   @media screen and (max-width: 768px) {
     flex-direction: column;
   }
-`;
+`
 
-const Table = ({ children }) => <Container>{children}</Container>;
+const Table = ({ children }) => <Container>{children}</Container>
 
-export default Table;
+export default Table

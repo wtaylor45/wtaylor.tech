@@ -1,5 +1,5 @@
 import React from "react"
-import '../index.css';
+import "../index.css"
 import SEO from "../components/seo"
 import styled from "styled-components"
 import Logo from "../components/Logo"
@@ -59,7 +59,8 @@ const theme = createMuiTheme({
 })
 
 const IndexPage = () => {
-  const contactClickHandler = (e) => document.getElementById('contact').scrollIntoView({behavior: "smooth"});
+  const contactClickHandler = e =>
+    document.getElementById("contact").scrollIntoView({ behavior: "smooth" })
 
   return (
     <MuiThemeProvider theme={theme}>

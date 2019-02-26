@@ -1,20 +1,21 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react"
+import styled from "styled-components"
 
 const Img = styled.img`
   position: absolute;
   width: 15vmin;
   height: 15vmin;
   z-index: 9999;
-  transition: ${props => props.transition || '.5s'};
+  transition: ${props => props.transition || ".5s"};
   &:hover {
     filter: ${props =>
       props.animate
-        ? `drop-shadow(15px 5px 1px ${props.shadowColor || 'rgba(255, 100, 255, 0.5)'})`
+        ? `drop-shadow(15px 5px 1px ${props.shadowColor ||
+            "rgba(255, 100, 255, 0.5)"})`
         : null};
     cursor: pointer;
   }
-`;
+`
 
 const Logo = props => (
   <a href={props.href}>
@@ -25,6 +26,6 @@ const Logo = props => (
       src={props.imgSrc}
     />
   </a>
-);
+)
 
-export default Logo;
+export default Logo

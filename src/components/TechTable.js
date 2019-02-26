@@ -1,9 +1,9 @@
-import React from 'react';
-import Table from './Table';
-import IconTableColumn from './IconTableColumn';
-import List from './List';
-import web from '../images/web.svg';
-import tool from '../images/tools.svg';
+import React from "react"
+import Table from "./Table"
+import IconTableColumn from "./IconTableColumn"
+import List from "./List"
+import web from "../images/web.svg"
+import tool from "../images/tools.svg"
 
 const TechTable = ({ languages, tools }) => (
   <Table>
@@ -14,6 +14,6 @@ const TechTable = ({ languages, tools }) => (
       <List elements={tools} />
     </IconTableColumn>
   </Table>
-);
+)
 
-export default TechTable;
+export default TechTable
