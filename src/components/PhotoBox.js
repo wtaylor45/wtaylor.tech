@@ -4,6 +4,7 @@ import styled from "styled-components"
 const Img = styled.img`
   border-radius: 10px;
   min-height: 200px;
+  max-width: 100%;
   width: ${props => props.width || "100%"};
   height: ${props => props.width || "25vmin"};
   object-fit: cover;

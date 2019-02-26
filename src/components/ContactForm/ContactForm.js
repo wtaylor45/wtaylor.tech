@@ -55,7 +55,7 @@ class ContactForm extends React.Component {
                         <p>Contact me using the form below and I'll be sure to get back to you as soon as I can.</p>
                         {this.state.error ? <Error>{this.state.error}</Error> : null }
                         <Grid container direction="column" alignContent="center" spacing={8}>
-                            <FullItem item lg>
+                            <FullItem item>
                                 <Grid container direction="row" spacing={8}>
                                     <GrowGrid item>
                                         <TextField variant="outlined" autoComplete="name" fullWidth label="Name" name="name"  required />
