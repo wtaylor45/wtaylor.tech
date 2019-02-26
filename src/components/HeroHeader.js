@@ -59,7 +59,7 @@ const HeroHeader = ({
   ]
 
   return (
-    <Header image={image} minHeight={minHeight}>
+    <Header image={image} minHeight={minHeight} isFixed={true}>
       <IntroTitle>{introTitle}</IntroTitle>
       <Title>
         <TwoToneText
