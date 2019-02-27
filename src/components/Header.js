@@ -37,21 +37,21 @@ const Img = styled(Cover)`
     props.image !== "undefined" ? `grayscale(100) brightness(50%)` : `none`};
 
   @media (max-width: 500px) and (min-width: 300px) {
-    background-image: url(${props => props.smImg || props.image});
+    background-image: url(${props => props.smImg});
   }
 
   @media (max-width: 800px) and (min-width: 500px) {
-    background-image: url(${props => props.mdImg || props.image});
+    background-image: url(${props => props.mdImg});
   }
 
   @media (max-width: 1280px) and (min-width: 800px) {
-    background-image: url(${props => props.lgImg || props.image});
+    background-image: url(${props => props.lgImg});
   }
 `
 
 const Header = ({ children, isFixed, minHeight, image, smImg, mdImg, lgImg }) => (
   <Root minHeight={minHeight}>
-    <Img isFixed={isFixed} imageSrc={image} smImg={smImg} mdImg={mdImg} lgImg={lgImg}/>
+    <Img isFixed={isFixed} imageSrc={image} smImg={smImg || image} mdImg={mdImg || image} lgImg={lgImg || image}/>
     <Content>{children}</Content>
   </Root>
 )
