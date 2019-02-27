@@ -49,9 +49,23 @@ const Img = styled(Cover)`
   }
 `
 
-const Header = ({ children, isFixed, minHeight, image, smImg, mdImg, lgImg }) => (
+const Header = ({
+  children,
+  isFixed,
+  minHeight,
+  image,
+  smImg,
+  mdImg,
+  lgImg,
+}) => (
   <Root minHeight={minHeight}>
-    <Img isFixed={isFixed} imageSrc={image} smImg={smImg || image} mdImg={mdImg || image} lgImg={lgImg || image}/>
+    <Img
+      isFixed={isFixed}
+      imageSrc={image}
+      smImg={smImg || image}
+      mdImg={mdImg || image}
+      lgImg={lgImg || image}
+    />
     <Content>{children}</Content>
   </Root>
 )
