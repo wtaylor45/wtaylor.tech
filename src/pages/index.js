@@ -5,6 +5,9 @@ import styled from "styled-components"
 import Logo from "../components/Logo"
 import logoSrc from "../images/logo.png"
 import lincoln from "../images/lincoln-min.jpg"
+import smLincoln from '../images/lincoln-min@500.jpg';
+import mdLincoln from '../images/lincoln-min@800.jpg';
+import lgLincoln from '../images/lincoln-min@1280.jpg';
 import HeroHeader from "../components/HeroHeader"
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles"
 import { purple, cyan } from "@material-ui/core/colors"
@@ -74,6 +77,9 @@ const IndexPage = () => {
           subTitle="(Also musician, traveler, and New York Jets Fan)"
           minHeight="70vh"
           onClick={contactClickHandler}
+          smImg={smLincoln}
+          mdImg={mdLincoln}
+          lgImg={lgLincoln}
         />
         <Container
           backgroundColor={theme.palette.primary.dark}

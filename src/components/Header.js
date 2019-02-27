@@ -35,11 +35,23 @@ const Img = styled(Cover)`
       : "cover"};
   filter: ${props =>
     props.image !== "undefined" ? `grayscale(100) brightness(50%)` : `none`};
+
+  @media (max-width: 500px) and (min-width: 300px) {
+    background-image: url(${props => props.smImg || props.image});
+  }
+
+  @media (max-width: 800px) and (min-width: 500px) {
+    background-image: url(${props => props.mdImg || props.image});
+  }
+
+  @media (max-width: 1280px) and (min-width: 800px) {
+    background-image: url(${props => props.lgImg || props.image});
+  }
 `
 
-const Header = ({ children, minHeight, image }) => (
+const Header = ({ children, isFixed, minHeight, image, smImg, mdImg, lgImg }) => (
   <Root minHeight={minHeight}>
-    <Img isFixed={true} imageSrc={image} />
+    <Img isFixed={isFixed} imageSrc={image} smImg={smImg} mdImg={mdImg} lgImg={lgImg}/>
     <Content>{children}</Content>
   </Root>
 )

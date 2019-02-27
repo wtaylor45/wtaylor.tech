@@ -38,6 +38,9 @@ const ResponsiveButton = styled(Button)`
 const HeroHeader = ({
   minHeight,
   image,
+  smImg,
+  mdImg,
+  lgImg,
   introTitle,
   mainTitle,
   subTitle,
@@ -59,7 +62,7 @@ const HeroHeader = ({
   ]
 
   return (
-    <Header image={image} minHeight={minHeight} isFixed={false}>
+    <Header image={image} smImg={smImg} lgImg={lgImg} mdImg={mdImg} minHeight={minHeight}>
       <IntroTitle>{introTitle}</IntroTitle>
       <Title>
         <TwoToneText
