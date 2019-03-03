@@ -84,10 +84,10 @@ const IndexPage = () => {
           padding="24px 24px 200px 24px"
         >
           <Section title="About Me">
-            Like I said up there, I'm Will. I'm a software developer who works
-            mostly in JavaScript. I'm currently located in the Washington, D.C.
-            area working for Macedon Technologies. I've been programming since I
-            was 12, and have been working on web tech for the past 4 years.
+            I'm Will. I'm a software developer who works mostly in JavaScript.
+            I'm currently located in the Washington, D.C. area working for
+            Macedon Technologies. I've been programming since I was 12, and have
+            been working on web tech for the past 3 years.
           </Section>
         </Container>
         <Container margin="-200px 0px 0px 0px">
@@ -106,7 +106,7 @@ const IndexPage = () => {
             from the ground up. The application integrated with a state of the
             art machine learning system, and was used to show users what types
             of malware was incoming on their network. The front end was built in
-            Angular, and run as an Electron app.
+            Angular 2, and run as an Electron app.
           </Section>
         </Container>
         <Container
@@ -124,9 +124,8 @@ const IndexPage = () => {
             dog Zeus. I have been playing guitar and making music for 12 years,
             playing in bands on and off.
             <br />
-            Zeus is my mutt puppy who I rescued in July 2018. He's the best -
-            super cuddly - and if you work with me you might just get to meet
-            him.
+            Zeus is my puppy who I rescued in July 2018. He's the best - super
+            cuddly - and if you work with me you might just get to meet him.
           </Section>
         </Container>
         <Container margin="-200px 0px 0px 0px">
