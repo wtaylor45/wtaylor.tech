@@ -4,18 +4,21 @@ nav {
   place-content: end;
   grid-auto-flow: column;
   width: 100%;
+  z-index: 1;
 }
 
 .link {
   color: white;
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
-  padding: 32px;
+  font-size: calc(8px + 1vmin);
+  padding: 2vw;
   text-align: center;
   text-transform: uppercase;
 }
 
 .link:hover,
 .active-link {
-  background: #0267c1;
+  color: #f06543;
+  text-shadow: 1px 1px 2px #353531;
 }

@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Pacifico&display=swap');
+@import '~animate.css/source/_base.css';
+@import '~animate.css/source/fading_entrances/fadeInLeft.css';
+@import '~animate.css/source/fading_entrances/fadeInRight.css';
 
 .container {
   display: grid;
@@ -12,7 +14,9 @@
 .title {
   font-size: calc(48px + 10vw);
   text-shadow: 5px 5px #0267c1;
-  margin-bottom: 0px;
+  width: 90vw;
+  max-width: 500px;
+  margin-top: 0px;
   margin-left: 5px;
   margin-right: 5px;
 }
@@ -20,4 +24,16 @@
 .subtitle {
   font-size: calc(12px + 1vw);
   font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.word {
+  display: block;
+  text-align: left;
+  line-height: 1em;
+}
+
+.word.bottom {
+  text-align: right;
+  animation-delay: 0.25s;
 }
