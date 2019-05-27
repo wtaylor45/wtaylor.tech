@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Pacifico&display=swap');
+
+.container {
+  display: grid;
+  height: 100vh;
+  place-content: center;
+  color: white;
+  font-family: 'Pacifico', sans-serif;
+  text-align: center;
+}
+
+.title {
+  font-size: calc(48px + 10vw);
+  text-shadow: 5px 5px #0267c1;
+  margin-bottom: 0px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.subtitle {
+  font-size: calc(12px + 1vw);
+  font-family: 'Open Sans', sans-serif;
+}
