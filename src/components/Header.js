@@ -25,7 +25,7 @@ const Header = () => (
       >
         Blog
       </Link>
-      <div class="bar" />
+      <div className="bar" />
     </nav>
   </header>
 );
