@@ -6,19 +6,21 @@
   display: grid;
   height: 100vh;
   place-content: center;
+  place-items: center;
   color: white;
   font-family: 'Pacifico', sans-serif;
-  text-align: center;
 }
 
 .title {
-  font-size: calc(48px + 10vw);
+  font-size: calc(48px + 10vmin);
   text-shadow: 5px 5px #0267c1;
-  width: 90vw;
+  width: 50vw;
+  min-width: 300px;
   max-width: 500px;
   margin-top: 0px;
   margin-left: 5px;
   margin-right: 5px;
+  margin-bottom: calc(32px + 1vh);
 }
 
 .subtitle {
