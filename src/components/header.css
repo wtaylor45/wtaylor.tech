@@ -1,10 +1,14 @@
 nav {
+  margin-top: 12px;
   position: fixed;
   display: grid;
   place-content: end;
   grid-auto-flow: column;
   width: 100%;
   z-index: 1;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(3, 100px);
+  place-items: center;
 }
 
 .link {
@@ -12,13 +16,46 @@ nav {
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
   font-size: calc(8px + 1vmin);
-  padding: 2vw;
+  width: 100%;
   text-align: center;
   text-transform: uppercase;
+  position: relative;
 }
 
-.link:hover,
-.active-link {
-  color: #f06543;
-  text-shadow: 1px 1px 2px #353531;
+.bar {
+  width: 0;
+  height: 2px;
+  top: 12px;
+  background: transparent;
+  position: absolute;
+}
+
+#b1:hover ~ .bar,
+#b1.active-link ~ .bar {
+  top: calc(20px + 1vmin);
+  right: 220px;
+  width: 60px;
+  height: 4px;
+  background: #ef8543;
+  transition: 0.5s ease;
+}
+
+#b2:hover ~ .bar,
+#b2.active-link ~ .bar {
+  top: calc(20px + 1vmin);
+  right: 105px;
+  width: 90px;
+  background: #ff3399;
+  box-shadow: 0 0 10px #ff3399;
+  transition: 0.5s ease;
+}
+
+#b3:hover ~ .bar,
+#b3.active-link ~ .bar {
+  top: calc(20px + 1vmin);
+  right: 25px;
+  width: 50px;
+  background: #00ff00;
+  box-shadow: 0 0 10px white;
+  transition: 0.5s ease;
 }

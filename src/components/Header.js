@@ -6,12 +6,26 @@ import './header.css';
 const Header = () => (
   <header>
     <nav>
-      <Link activeClassName="active-link" className="link" to="/about">
+      <Link id="b1" activeClassName="active-link" className="link" to="/about">
         About
       </Link>
-      <Link activeClassName="active-link" className="link" to="/contact">
+      <Link
+        id="b2"
+        activeClassName="active-link"
+        className="link"
+        to="/contact"
+      >
         Contact
       </Link>
+      <Link
+        id="b3"
+        activeClassName="active-link"
+        className="link"
+        to="/contact"
+      >
+        Blog
+      </Link>
+      <div class="bar" />
     </nav>
   </header>
 );
