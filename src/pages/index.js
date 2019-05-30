@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Layout from '../components/layout';
 import './index.css';
 
@@ -7,13 +7,18 @@ const IndexPage = () => {
   let [clicks, setClickCount] = useState(0);
 
   const clickHandler = () => {
-    console.log(clicks);
     setAnimationState(!animationState);
     setClickCount(++clicks);
   };
 
   return (
     <Layout>
+      <div id="grass" hidden={clicks < 30} />
+      <div id="clouds" hidden={clicks < 30}>
+        <div id="c1" className="cloud" />
+        <div id="c2" className="cloud" />
+        <div id="c3" className="cloud" />
+      </div>
       <section className="container">
         <h1
           className={
