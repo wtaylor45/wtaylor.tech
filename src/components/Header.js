@@ -5,6 +5,7 @@ import './header.css';
 
 const Header = () => (
   <header>
+    <div class="blocker" />
     <nav>
       <Link id="b1" activeClassName="active-link" className="link" to="/about">
         About

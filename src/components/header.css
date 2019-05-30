@@ -1,6 +1,7 @@
 nav {
   margin-top: 12px;
-  position: fixed;
+  margin-bottom: 12px;
+  position: sticky;
   display: grid;
   place-content: end;
   grid-auto-flow: column;
