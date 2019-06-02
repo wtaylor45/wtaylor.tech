@@ -1,0 +1,90 @@
+.container {
+  flex: 1;
+  color: white;
+  display: grid;
+  place-content: center;
+  place-items: center;
+  font-family: 'Pacifico', sans-serif;
+}
+
+.subtitle {
+  font-size: calc(12px + 1vw);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.word {
+  display: block;
+  text-align: left;
+  line-height: 1em;
+  animation: hover 10s infinite ease-in-out alternate-reverse;
+}
+
+.word.bottom {
+  text-align: right;
+  animation-duration: 8s;
+}
+
+.awesome {
+  animation: awesome 0.5s infinite;
+}
+
+.paused .word {
+  animation-play-state: paused;
+  transition: 0.5s;
+}
+
+.pause-button {
+  border: 0;
+  background: transparent;
+  width: 0;
+  height: 50px;
+
+  border-color: transparent transparent transparent white;
+  transition: 100ms all ease;
+  cursor: pointer;
+
+  border-style: double;
+  border-width: 0px 0 0px 40px;
+}
+
+.pause-button.paused {
+  border-style: solid;
+  border-width: 24px 0 24px 40px;
+}
+
+@keyframes hover {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  25% {
+    transform: translate3d(-5px, 5px, 0px);
+  }
+  50% {
+    transform: translate3d(0px, -2px, 0px);
+  }
+  75% {
+    transform: translate3d(10px, 13px, 0px);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+
+@keyframes awesome {
+  0% {
+    color: red;
+  }
+  25% {
+    color: yellow;
+  }
+  50% {
+    color: lime;
+  }
+  75% {
+    color: cyan;
+  }
+  100% {
+    color: rgb(255, 0, 255);
+  }
+}

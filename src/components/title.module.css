@@ -1,0 +1,13 @@
+.fancy-title {
+  font-family: 'Pacifico';
+  font-size: calc(48px + 10vmin);
+  color: white;
+  text-shadow: 5px 5px #0267c1;
+  width: 50vw;
+  min-width: 300px;
+  max-width: 500px;
+  margin-top: 0px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: calc(32px + 1vh);
+}

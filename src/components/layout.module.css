@@ -13,5 +13,13 @@ html {
 body {
   margin: 0;
   background-color: #0075c4;
+  color: white;
   font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
 }

@@ -1,32 +1,21 @@
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
-import './header.css';
+import './header.module.css';
 
 const Header = () => (
-  <header>
-    <div class="blocker" />
+  <header styleName="container">
     <nav>
-      <Link id="b1" activeClassName="active-link" className="link" to="/about">
+      <Link activeClassName="active-link" styleName="link b1" to="/about">
         About
       </Link>
-      <Link
-        id="b2"
-        activeClassName="active-link"
-        className="link"
-        to="/contact"
-      >
+      <Link activeClassName="active-link" styleName="link b2" to="/contact">
         Contact
       </Link>
-      <Link
-        id="b3"
-        activeClassName="active-link"
-        className="link"
-        to="/contact"
-      >
+      <Link activeClassName="active-link" styleName="link b3" to="/contact">
         Blog
       </Link>
-      <div className="bar" />
+      <div styleName="bar" />
     </nav>
   </header>
 );

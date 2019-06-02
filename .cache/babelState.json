@@ -1,7 +1,16 @@
 {
   "stages": {
     "develop": {
-      "plugins": [],
+      "plugins": [
+        {
+          "name": "babel-plugin-react-css-modules",
+          "options": {
+            "generateScopedName": "[name]--[local]--[hash:base64:5]",
+            "webpackHotModuleReloading": true,
+            "exclude": "/global/"
+          }
+        }
+      ],
       "presets": [],
       "options": {
         "cacheDirectory": true,
@@ -9,7 +18,16 @@
       }
     },
     "develop-html": {
-      "plugins": [],
+      "plugins": [
+        {
+          "name": "babel-plugin-react-css-modules",
+          "options": {
+            "generateScopedName": "[name]--[local]--[hash:base64:5]",
+            "webpackHotModuleReloading": true,
+            "exclude": "/global/"
+          }
+        }
+      ],
       "presets": [],
       "options": {
         "cacheDirectory": true,
@@ -17,7 +35,16 @@
       }
     },
     "build-html": {
-      "plugins": [],
+      "plugins": [
+        {
+          "name": "babel-plugin-react-css-modules",
+          "options": {
+            "generateScopedName": "[name]--[local]--[hash:base64:5]",
+            "webpackHotModuleReloading": true,
+            "exclude": "/global/"
+          }
+        }
+      ],
       "presets": [],
       "options": {
         "cacheDirectory": true,
@@ -25,7 +52,16 @@
       }
     },
     "build-javascript": {
-      "plugins": [],
+      "plugins": [
+        {
+          "name": "babel-plugin-react-css-modules",
+          "options": {
+            "generateScopedName": "[name]--[local]--[hash:base64:5]",
+            "webpackHotModuleReloading": true,
+            "exclude": "/global/"
+          }
+        }
+      ],
       "presets": [],
       "options": {
         "cacheDirectory": true,
