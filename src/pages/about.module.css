@@ -2,8 +2,11 @@
   display: grid;
   grid-auto-flow: row;
   place-items: center;
-  max-width: 768px;
+  max-width: 900px;
+  padding: 12px;
   margin: 12px;
+  background-color: #0267c1;
+  border-radius: 5%;
 }
 
 .title {
@@ -16,4 +19,16 @@
   height: 20vmin;
   min-width: 64px;
   min-height: 64px;
+}
+
+.text {
+  font-size: calc(12px + 1vmin);
+}
+
+.inline-link,
+.inline-link:visited {
+  text-decoration: none;
+  color: #00d81d;
+  cursor: pointer;
+  font-weight: bolder;
 }
