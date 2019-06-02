@@ -7,9 +7,7 @@ import bitmoji from '../images/bitmoji.png';
 const About = () => (
   <Layout>
     <div styleName="container">
-      <Title textAlign="center">
-        <span styleName="title">About Me</span>
-      </Title>
+      <h1 styleName="title">About Me</h1>
       <section styleName="text">
         <p>
           Hi, I'm Will! I'm a font end developer who's passionate about creating

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto|Pacifico&display=swap');
 
 /*
  * Palette: https://coolors.co/0267c1-0075c4-353531-f06543-ffffff
@@ -14,7 +14,7 @@ body {
   margin: 0;
   background-color: #0075c4;
   color: white;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .container {
