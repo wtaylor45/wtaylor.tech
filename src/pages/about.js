@@ -29,7 +29,11 @@ const About = () => (
           >
             learn in public
           </a>{' '}
-          (so check out my twitter!).
+          (so{' '}
+          <a styleName="inline-link" href="https://twitter.com/NoThisIsWill">
+            check out my twitter
+          </a>
+          !).
         </p>
       </section>
     </div>
