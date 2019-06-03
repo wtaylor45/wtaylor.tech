@@ -15,7 +15,9 @@ const Header = () => (
       <Link activeClassName="active-link" styleName="link b3" to="/blog">
         Blog
       </Link>
-      <div styleName="bar" />
+      <div styleName="bar1" />
+      <div styleName="bar2" />
+      <div styleName="bar3" />
     </nav>
   </header>
 );
