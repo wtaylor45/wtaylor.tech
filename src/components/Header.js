@@ -1,7 +1,7 @@
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
-import './header.module.css';
+import styles from './header.module.css';
 
 const Header = () => (
   <header styleName="container">
@@ -12,7 +12,7 @@ const Header = () => (
       <Link activeClassName="active-link" styleName="link b2" to="/contact">
         Contact
       </Link>
-      <Link activeClassName="active-link" styleName="link b3" to="/contact">
+      <Link activeClassName="active-link" styleName="link b3" to="/blog">
         Blog
       </Link>
       <div styleName="bar" />

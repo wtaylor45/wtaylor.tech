@@ -16,7 +16,8 @@ nav {
   place-items: center;
 }
 
-.link {
+.link,
+:global(.active-link) {
   color: white;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
@@ -37,17 +38,16 @@ nav {
 
 .b1:hover ~ .bar,
 .b1:focus ~ .bar,
-.b1.active-link ~ .bar {
+.b1:global(.active-link) ~ .bar {
   width: 40%;
   background: #ef8543;
   grid-column: 1 / 2;
   transition: 0.25s ease;
-  animation: big 0.5s reverse;
 }
 
 .b2:hover ~ .bar,
 .b2:focus ~ .bar,
-.b2.active-link ~ .bar {
+.b2:global(.active-link) ~ .bar {
   grid-column: 2 / 3;
   background: #ff3399;
   box-shadow: 0 0 10px #ff3399;
@@ -56,7 +56,7 @@ nav {
 
 .b3:hover ~ .bar,
 .b3:focus ~ .bar,
-.b3.active-link ~ .bar {
+.b3:global(.active-link) ~ .bar {
   grid-column: 3 / 4;
   width: 30%;
   background: #00ff00;
