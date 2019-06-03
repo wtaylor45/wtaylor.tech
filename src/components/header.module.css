@@ -1,11 +1,12 @@
 .container {
   align-self: flex-end;
+  position: sticky;
+  top: 0;
 }
 
 nav {
   margin-top: 12px;
   margin-bottom: 12px;
-  position: sticky;
   display: grid;
   place-content: end;
   width: 100%;
