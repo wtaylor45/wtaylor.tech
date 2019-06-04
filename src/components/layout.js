@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './header';
 import './layout.module.css';
 
-export default function layout({ children }) {
+export default function Layout({ children }) {
   return (
     <div styleName="container">
       <a styleName="skip" href="#content">
