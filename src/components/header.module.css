@@ -33,10 +33,11 @@ nav {
 .bar1,
 .bar2,
 .bar3 {
-  width: 50%;
+  width: 100%;
   min-width: 40px;
   height: 3px;
   background: transparent;
+  transition: 0.25s;
 }
 
 .b1:hover ~ .bar1,
@@ -51,6 +52,7 @@ nav {
 .b2:hover ~ .bar2,
 .b2:focus ~ .bar2,
 .b2:global(.active-link) ~ .bar2 {
+  width: 50%;
   grid-column: 2 / 3;
   background: #ff3399;
   box-shadow: 0 0 10px #ff3399;
