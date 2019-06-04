@@ -14,8 +14,14 @@ const Contact = () => {
     <Layout>
       <SEO title="Contact Me" />
       <section styleName="contact-container">
+        <h1 styleName="title">Contact Me</h1>
         Shoot me a message and I'll get back to you as soon as I can!
-        <form styleName="form" name="contact" method="POST" netlify>
+        <form
+          styleName="form"
+          name="contact"
+          action="/success"
+          data-netlify="true"
+        >
           <label for="email">
             Email
             <br />

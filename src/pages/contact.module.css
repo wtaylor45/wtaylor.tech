@@ -6,8 +6,18 @@
 
 .contact-container {
   width: 90vw;
-  max-width: 768px;
+  max-width: 900px;
   padding: 12px;
+  padding-bottom: 24px;
+  margin: 12px;
+  background-color: #0267c1;
+  border-radius: 5%;
+}
+
+.title {
+  font-family: 'Pacifico';
+  font-size: calc(36px + 2vmin);
+  text-align: center;
 }
 
 .email-input,
