@@ -1,6 +1,6 @@
 import React from 'react';
-import './layout.module.css';
 import Header from './header';
+import './layout.module.css';
 
 export default function layout({ children }) {
   return (
