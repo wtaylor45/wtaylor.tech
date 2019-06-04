@@ -6,7 +6,7 @@
           "name": "babel-plugin-react-css-modules",
           "options": {
             "generateScopedName": "[name]--[local]--[hash:base64:5]",
-            "webpackHotModuleReloading": false,
+            "webpackHotModuleReloading": true,
             "exclude": "/global/"
           }
         }
@@ -23,7 +23,7 @@
           "name": "babel-plugin-react-css-modules",
           "options": {
             "generateScopedName": "[name]--[local]--[hash:base64:5]",
-            "webpackHotModuleReloading": false,
+            "webpackHotModuleReloading": true,
             "exclude": "/global/"
           }
         }
@@ -40,7 +40,7 @@
           "name": "babel-plugin-react-css-modules",
           "options": {
             "generateScopedName": "[name]--[local]--[hash:base64:5]",
-            "webpackHotModuleReloading": false,
+            "webpackHotModuleReloading": true,
             "exclude": "/global/"
           }
         }
@@ -57,7 +57,7 @@
           "name": "babel-plugin-react-css-modules",
           "options": {
             "generateScopedName": "[name]--[local]--[hash:base64:5]",
-            "webpackHotModuleReloading": false,
+            "webpackHotModuleReloading": true,
             "exclude": "/global/"
           }
         }
