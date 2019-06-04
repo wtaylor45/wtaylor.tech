@@ -5,8 +5,11 @@ import Header from './header';
 export default function layout({ children }) {
   return (
     <div styleName="container">
+      <a styleName="skip" href="#content">
+        Skip to content
+      </a>
       <Header />
-      {children}
+      <div id="content">{children}</div>
     </div>
   );
 }

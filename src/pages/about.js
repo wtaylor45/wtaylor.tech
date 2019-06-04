@@ -1,8 +1,6 @@
 import React from 'react';
 import Layout from '../components/layout';
-import { Title } from '../components/title';
 import './about.module.css';
-import bitmoji from '../images/bitmoji.png';
 
 const About = () => (
   <Layout>

@@ -31,5 +31,9 @@
   text-decoration: none;
   color: #01e720;
   cursor: pointer;
-  font-weight: bolder;
+}
+
+.inline-link:focus {
+  text-decoration: underline;
+  outline: none;
 }

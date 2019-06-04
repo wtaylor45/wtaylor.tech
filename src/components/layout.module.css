@@ -6,6 +6,7 @@
 
 * {
   box-sizing: border-box;
+  outline-color: white;
 }
 html {
   height: 100%;
@@ -22,4 +23,19 @@ body {
   flex-direction: column;
   min-height: 100vh;
   align-items: center;
+}
+
+.skip {
+  position: absolute;
+  opacity: 0;
+  font-size: 0px;
+  text-decoration: none;
+  height: 0px;
+  color: transparent;
+}
+
+.skip:focus {
+  opacity: 1;
+  font-size: 12px;
+  color: white;
 }
