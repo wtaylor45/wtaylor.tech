@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Title } from '../components/title';
 import Layout from '../components/layout';
+import SEO from '../components/SEO';
 import './index.module.css';
 
 const IndexPage = () => {
@@ -14,6 +15,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
+      <SEO title="Home" />
       <section styleName="container">
         <Title>
           <span

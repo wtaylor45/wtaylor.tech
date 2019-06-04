@@ -1,9 +1,11 @@
 import React from 'react';
 import Layout from '../components/layout';
+import SEO from '../components/SEO';
 import './about.module.css';
 
 const About = () => (
   <Layout>
+    <SEO title="About Me" />
     <div styleName="container">
       <h1 styleName="title">About Me</h1>
       <section styleName="text">
