@@ -15,7 +15,7 @@ const Contact = () => {
       <SEO title="Contact Me" />
       <section styleName="contact-container">
         Shoot me a message and I'll get back to you as soon as I can!
-        <form styleName="form">
+        <form styleName="form" netlify>
           <label for="email">
             Email
             <br />
