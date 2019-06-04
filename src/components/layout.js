@@ -9,7 +9,9 @@ export default function layout({ children }) {
         Skip to content
       </a>
       <Header />
-      <div id="content">{children}</div>
+      <div styleName="content" id="content">
+        {children}
+      </div>
     </div>
   );
 }

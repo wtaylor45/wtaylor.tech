@@ -14,14 +14,6 @@
   font-family: 'Pacifico', sans-serif;
 }
 
-.bitmoji {
-  display: inline-block;
-  width: 20vmin;
-  height: 20vmin;
-  min-width: 64px;
-  min-height: 64px;
-}
-
 .text {
   font-size: calc(12px + 1vmin);
 }

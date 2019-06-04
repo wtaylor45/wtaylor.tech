@@ -41,7 +41,9 @@ const IndexPage = () => {
         <button
           styleName={'pause-button ' + (!animationState ? 'paused ' : '')}
           onClick={clickHandler}
-        />
+        >
+          Pause Animation
+        </button>
       </section>
     </Layout>
   );
