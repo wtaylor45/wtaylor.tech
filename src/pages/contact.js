@@ -39,7 +39,7 @@ const Contact = () => {
         <h1 styleName="title">Contact Me</h1>
         Shoot me a message and I'll get back to you as soon as I can!
         <form styleName="form" onSubmit={handleFormSubmit}>
-          <label for="name">
+          <label htmlFor="name">
             Name:
             <br />
             <input
@@ -52,7 +52,7 @@ const Contact = () => {
               required
             />
           </label>
-          <label for="email">
+          <label htmlFor="email">
             Email:
             <br />
             <input
@@ -60,12 +60,11 @@ const Contact = () => {
               name="email"
               aria-label="Email"
               aria-required="true"
-              ref={ref}
               onChange={handleInputChange}
               required
             />
           </label>
-          <label for="message">
+          <label htmlFor="message">
             Message:
             <br />
             <textarea
