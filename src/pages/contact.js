@@ -6,6 +6,7 @@ import './contact.module.css';
 const Contact = () => {
   const ref = useRef();
   const [form, setForm] = useState({
+    name: '',
     email: '',
     message: ''
   });
@@ -38,22 +39,34 @@ const Contact = () => {
         <h1 styleName="title">Contact Me</h1>
         Shoot me a message and I'll get back to you as soon as I can!
         <form styleName="form" onSubmit={handleFormSubmit}>
+          <label for="name">
+            Name:
+            <br />
+            <input
+              type="text"
+              name="name"
+              aria-label="Name"
+              aria-required="true"
+              ref={ref}
+              onChange={handleInputChange}
+              required
+            />
+          </label>
           <label for="email">
-            Email
+            Email:
             <br />
             <input
               type="email"
               name="email"
               aria-label="Email"
               aria-required="true"
-              styleName="email-input"
               ref={ref}
               onChange={handleInputChange}
               required
             />
           </label>
           <label for="message">
-            Message
+            Message:
             <br />
             <textarea
               type="text"

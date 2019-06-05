@@ -20,7 +20,7 @@
   text-align: center;
 }
 
-.email-input,
+input,
 textarea {
   border: none;
   margin: 5px 0 5px 0;
