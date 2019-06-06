@@ -1,0 +1,15 @@
+.success-container {
+  width: 90vw;
+  max-width: 768px;
+  padding: 12px;
+  text-align: center;
+  padding: 12px;
+  margin: 12px;
+  background-color: #0267c1;
+  border-radius: 10px;
+}
+
+.title {
+  font-family: 'Pacifico', sans-serif;
+  font-size: calc(36px + 2vmin);
+}

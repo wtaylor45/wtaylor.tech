@@ -1,17 +1,17 @@
 module.exports = {
   siteMetadata: {
     title: `Will Taylor`,
-    description: ``,
-    author: `@wtaylor45`,
+    description: `A brief introduction to me, Will Taylor.`,
+    author: `@wtaylor45`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
+        name: `posts`,
+        path: `${__dirname}/src/posts`
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -21,13 +21,22 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        theme_color: `#444`,
-        // display: `minimal-ui`,
-        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
-      },
+        background_color: `#663399`,
+        theme_color: `#663399`,
+        display: `minimal-ui`
+      }
     },
+    {
+      resolve: `gatsby-plugin-react-css-modules`,
+      options: {
+        // Exclude global styles from the plugin using a RegExp:
+        exclude: `\/global\/`
+      }
+    },
+    `gatsby-plugin-catch-links`,
+    `gatsby-transformer-remark`
     // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
-  ],
-}
+    // To learn more, visit: https://gatsby.dev/offline
+    // `gatsby-plugin-offline`
+  ]
+};

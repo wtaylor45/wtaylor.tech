@@ -1,0 +1,31 @@
+.container {
+  display: grid;
+  grid-auto-flow: row;
+  place-items: center;
+  max-width: 900px;
+  padding: 12px;
+  margin: 12px;
+  background-color: #0267c1;
+  border-radius: 10px;
+}
+
+.title {
+  font-size: calc(32px + 3vmin);
+  font-family: 'Pacifico', sans-serif;
+}
+
+.text {
+  font-size: calc(12px + 1vmin);
+}
+
+.inline-link,
+.inline-link:visited {
+  text-decoration: none;
+  color: #0bffff;
+  cursor: pointer;
+}
+
+.inline-link:focus {
+  text-decoration: underline;
+  outline: none;
+}

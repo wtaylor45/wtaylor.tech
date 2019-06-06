@@ -1,0 +1,33 @@
+.post {
+  width: 90vw;
+  max-width: 900px;
+  padding: 12px;
+  margin: 12px;
+  background-color: #0267c1;
+  border-radius: 5px;
+}
+
+.content a,
+.content a:visited {
+  text-decoration: none;
+  color: #0bffff;
+  cursor: pointer;
+}
+
+.title {
+  margin-bottom: 5px;
+}
+
+.return {
+  text-decoration: none;
+  color: white;
+}
+
+.return:before {
+  content: '\002b05';
+  margin-right: 3px;
+}
+
+.subtitle {
+  color: rgba(255, 255, 255, 0.7);
+}

@@ -1,0 +1,54 @@
+.form {
+  margin-top: 12px;
+  display: grid;
+  grid-auto-flow: row;
+}
+
+.contact-container {
+  width: 90vw;
+  max-width: 900px;
+  padding: 12px;
+  padding-bottom: 24px;
+  margin: 12px;
+  background-color: #0267c1;
+  border-radius: 10px;
+}
+
+.title {
+  font-family: 'Pacifico';
+  font-size: calc(36px + 2vmin);
+  text-align: center;
+}
+
+input,
+textarea {
+  border: none;
+  margin: 5px 0 5px 0;
+  padding: 5px;
+  font-size: 14px;
+  width: 100%;
+  box-shadow: 0 0 2px #444;
+  font-family: 'Roboto', sans-serif;
+}
+
+textarea {
+  resize: none;
+}
+
+.submit {
+  background: #e60073;
+  padding: 5px;
+  font-size: 14px;
+  border: none;
+  width: 74px;
+  align-self: start;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .submit,
+  .email-input,
+  textarea {
+    font-size: 12px;
+  }
+}

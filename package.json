@@ -1,27 +1,28 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "wtaylor.tech",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "A brief introduction into who I am and what I do",
+  "version": "1.0.0",
+  "author": "Will Taylor <will@wtaylor.tech",
   "dependencies": {
-    "@material-ui/core": "^3.9.2",
-    "gatsby": "^2.1.18",
-    "gatsby-image": "^2.0.30",
-    "gatsby-plugin-manifest": "^2.0.19",
-    "gatsby-plugin-offline": "^2.0.24",
-    "gatsby-plugin-react-helmet": "^3.0.7",
-    "gatsby-plugin-sharp": "^2.0.22",
-    "gatsby-source-filesystem": "^2.0.23",
-    "gatsby-transformer-sharp": "^2.1.14",
+    "gatsby": "^2.8.3",
+    "gatsby-image": "^2.1.0",
+    "gatsby-plugin-catch-links": "^2.0.15",
+    "gatsby-plugin-manifest": "^2.1.1",
+    "gatsby-plugin-offline": "^2.1.1",
+    "gatsby-plugin-react-css-modules": "^2.0.9",
+    "gatsby-plugin-react-helmet": "^3.0.12",
+    "gatsby-plugin-sharp": "^2.0.37",
+    "gatsby-source-filesystem": "^2.0.38",
+    "gatsby-transformer-remark": "^2.3.12",
+    "gatsby-transformer-sharp": "^2.1.19",
     "prop-types": "^15.7.2",
-    "react": "^16.8.3",
-    "react-dom": "^16.8.3",
-    "react-helmet": "^5.2.0",
-    "styled-components": "^4.1.3"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1"
   },
   "devDependencies": {
-    "prettier": "^1.16.4"
+    "prettier": "^1.17.1"
   },
   "keywords": [
     "gatsby"
@@ -33,7 +34,7 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "repository": {
     "type": "git",
