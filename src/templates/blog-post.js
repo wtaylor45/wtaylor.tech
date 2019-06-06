@@ -28,7 +28,9 @@ const BlogPost = ({ data }) => {
 
 export const postQuery = graphql`
   query BlogPostByPath($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
+    markdownRemark(
+      frontmatter: { path: { eq: $path }, published: { eq: true } }
+    ) {
       html
       frontmatter {
         title

@@ -26,8 +26,8 @@ const Blog = ({ data }) => (
 );
 
 export const pageQuery = graphql`
-  query MyQuery {
-    allMarkdownRemark {
+  query BlogPostQuery {
+    allMarkdownRemark(filter: { frontmatter: { published: { eq: true } } }) {
       edges {
         node {
           frontmatter {
@@ -35,6 +35,7 @@ export const pageQuery = graphql`
             path
             date
             title
+            published
           }
           excerpt
         }
