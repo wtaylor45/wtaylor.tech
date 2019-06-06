@@ -1,0 +1,37 @@
+.container {
+  width: 90vw;
+  max-width: 900px;
+  padding: 12px;
+  margin: 12px;
+  background-color: #0267c1;
+  border-radius: 10px;
+}
+
+.title {
+  font-size: calc(32px + 3vmin);
+  font-family: 'Pacifico', sans-serif;
+  text-align: center;
+}
+
+article {
+  width: 100%;
+}
+
+small {
+  color: rgba(255, 255, 255, 0.726);
+  display: block;
+}
+
+.frontmatter {
+  margin-bottom: 12px;
+}
+
+.post-title {
+  margin-bottom: 5px;
+}
+
+.read-more {
+  display: block;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 12px;
+}
