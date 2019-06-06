@@ -10,7 +10,7 @@ const BlogPost = ({ data }) => {
   return (
     <Layout>
       <SEO title={post.frontmatter.title} />
-      <article>
+      <article styleName="post">
         <Link to="/blog" styleName="return">
           Back
         </Link>

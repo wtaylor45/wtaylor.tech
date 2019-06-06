@@ -10,7 +10,7 @@ const Blog = ({ data }) => (
     <div styleName="container">
       <h1 styleName="title">Blog Posts</h1>
       {data.allMarkdownRemark.edges.map(post => (
-        <article key="post.node.id">
+        <article key="post.node.id" styleName="list">
           <div styleName="frontmatter">
             <h3 styleName="post-title">{post.node.frontmatter.title}</h3>
             <small>{post.node.frontmatter.date}</small>
