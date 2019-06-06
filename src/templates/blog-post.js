@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../components/layout';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 
 const BlogPost = ({ data }) => {
   const post = data.markdownRemark;
@@ -29,3 +29,5 @@ export const postQuery = graphql`
     }
   }
 `;
+
+export default BlogPost;
