@@ -9,11 +9,11 @@ const Header = () => (
       <Link activeClassName="active-link" styleName="link b1" to="/about">
         About
       </Link>
-      <Link activeClassName="active-link" styleName="link b2" to="/contact">
-        Contact
-      </Link>
-      <Link activeClassName="active-link" styleName="link b3" to="/blog">
+      <Link activeClassName="active-link" styleName="link b2" to="/blog">
         Blog
+      </Link>
+      <Link activeClassName="active-link" styleName="link b3" to="/contact">
+        Conact
       </Link>
       <div styleName="bar1" />
       <div styleName="bar2" />
