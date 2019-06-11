@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto|Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700|Pacifico&display=swap');
 
 /*
  * Palette: https://coolors.co/0267c1-0075c4-353531-f06543-ffffff
@@ -31,6 +31,7 @@ body {
   flex: 1;
   flex-direction: column;
   align-items: center;
+  font-weight: 300;
 }
 
 .skip {

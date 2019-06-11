@@ -9,12 +9,6 @@ const Blog = ({ data }) => (
     <SEO title="Blog" />
     <div styleName="container">
       <h1 styleName="title">Blog Posts</h1>
-      <h2>
-        Blog posts coming soon{' '}
-        <span role="img" aria-label="emoji grimacing">
-          😬
-        </span>
-      </h2>
       {data.allMarkdownRemark.edges.map(post => (
         <article key="post.node.id" styleName="list">
           <div styleName="frontmatter">
@@ -37,7 +31,6 @@ export const pageQuery = graphql`
       edges {
         node {
           frontmatter {
-            author
             path
             date
             title

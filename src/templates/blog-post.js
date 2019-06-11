@@ -34,7 +34,6 @@ export const postQuery = graphql`
         title
         date
         path
-        author
       }
     }
   }

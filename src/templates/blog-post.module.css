@@ -5,6 +5,8 @@
   margin: 12px;
   background-color: #0267c1;
   border-radius: 5px;
+  font-size: calc(12px + 1vmin);
+  font-weight: 200;
 }
 
 .content a,
@@ -12,6 +14,10 @@
   text-decoration: none;
   color: #0bffff;
   cursor: pointer;
+}
+
+.content b {
+  font-weight: bolder;
 }
 
 .title {
