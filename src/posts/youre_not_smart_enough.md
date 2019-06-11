@@ -2,7 +2,6 @@
 title: "You're Not Smart Enough to Code"
 path: /youre-not-smart-enough-to-code
 published: true
-description: Throughout high school, I was repeatedly told I wasn't smart enough to code. I believed it.
 date: '2019-06-10'
 ---
 
