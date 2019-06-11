@@ -1,7 +1,7 @@
 ---
 title: "What are JavaScript Pipeline Operators?"
 date: '2019-03-21'
-path: what-are-js-pipeline-operators/
+path: /what-are-js-pipeline-operators
 published: true
 ---
 
