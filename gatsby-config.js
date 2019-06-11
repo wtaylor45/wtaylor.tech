@@ -18,9 +18,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `wtaylor.tech`,
         start_url: `/`,
+        icon: 'src/images/icon.png',
         background_color: `#0267C1`,
         theme_color: `#0267C1`,
         display: `minimal-ui`
